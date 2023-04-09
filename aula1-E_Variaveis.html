@@ -24,6 +24,71 @@
         window.alert("Você estuda: "+estuda);
         }
 
+        function varNomeF(){
+            // obtem o nome digitado pelo usuário
+            var nomeUsuario = document.getElementById("varNome").value;
+            // mostra na página o nome digitado pelo usuário
+            document.getElementById("recebeNome").innerHTML = nomeUsuario ;
+            
+            // obtem a idade digitado pelo usuário
+            var idadeUsuario = document.getElementById("varIdade").value;
+            // mostra na página o idade digitado pelo usuário
+            document.getElementById("recebeIdade").innerHTML = idadeUsuario ;
+
+            // obtem a altura digitado pelo usuário
+            var alturaUsuario = document.getElementById("varAltura").value;
+            // mostra na página o altura digitado pelo usuário
+            document.getElementById("recebeAltura").innerHTML = alturaUsuario ;
+
+            // obtem a estuda digitado pelo usuário
+            var estudaUsuario = document.getElementById("varEstuda").value;
+            
+            // cria um if para verficar o que o usuário vai digitar
+            if( (estudaUsuario == "S") || (estudaUsuario == "s") || (estudaUsuario == "Sim") || (estudaUsuario == "sim") ){
+                estudaUsuario = "Sim" ;
+            } else if ( (estudaUsuario == "N") || (estudaUsuario == "n") || (estudaUsuario == "Nao") || (estudaUsuario == "nao")){
+                estudaUsuario = " Não";
+            } else {
+                estudaUsuario = " Digitou algo errado !!";
+            }
+
+
+            // mostra na página o estuda digitado pelo usuário
+            document.getElementById("recebeEstuda").innerHTML = estudaUsuario ;
+
+        }
+            
+            function dadosUsuario() {
+                
+                var nomeUsuario = document.getElementById("varNome").value;
+                var idadeUsuario = document.getElementById("varIdade").value;
+                var alturaUsuario = document.getElementById("varAltura").value;
+
+                // obtem a estuda digitado pelo usuário
+                var estudaUsuario = document.getElementById("varEstuda").value;
+            
+                // cria um if para verficar o que o usuário vai digitar
+                if( (estudaUsuario == "S") || (estudaUsuario == "s") || (estudaUsuario == "Sim") || (estudaUsuario == "sim") ){
+                    estudaUsuario = "Sim" ;
+                } else if ( (estudaUsuario == "N") || (estudaUsuario == "n") || (estudaUsuario == "Nao") || (estudaUsuario == "nao")){
+                    estudaUsuario = " Não";
+                } else {
+                    estudaUsuario = " Digitou algo errado !!";
+                }
+                
+
+                //para exibir na tela
+                alert("Seu nome: "+nomeUsuario);
+                console.log(nomeUsuario)
+                alert("Sua idade: "+idadeUsuario);
+                alert("Sua altura é: "+alturaUsuario);
+                alert("Você estuda: "+estudaUsuario);
+            
+                }
+
+        
+
+            
 
     </script>
 </head>
@@ -78,6 +143,7 @@
                 <b>Exemplo de código:</b><br>
                 <br>
                 Depois da tag "script" coloque esses códigos:<br>
+                <br>
                 "// Variáveis" duas barras é para marca que é um comentário.<br>
                 <b>var nome = "Giovani";</b> a variável nome recebe o nome 'Giovani'.<br>
                 <b>var idade = 28;</b> a variável idade recebe o número '28'.<br>
@@ -86,6 +152,7 @@
                 <br>
                 <br>
                 <b>Para ser exibido na página, na "janelinha" será mostrado uma variável após a outra:</b><br>
+                <br>
                 //para exibir na tela.<br>
                 window.alert("Seu nome: "+nome);<br>
                 window.alert("Sua idade: "+idade);<br>
@@ -103,6 +170,29 @@
                 Agora veja como seria, clicando no botão abaixo:<br>
                 <br>
                 <button type="button" onclick="mostrarJanela()"> Mostrar as variáveis </button>
+                <br>
+                <br>
+                <br>
+                <div class="form">
+                    <h2>Crie suas próprias variáveis:</h2>
+                    <form>
+                        Digite o nome: <input type="text" id="varNome" name="nome-usuario" onkeyup="varNomeF()"> <br>
+                        Digite sua idade: <input type="number" id="varIdade" name="idade-usuario" onkeyup="varNomeF()"> <br>
+                        Digite sua altura: <input type="number" id="varAltura" name="Altura-usuario" onkeyup="varNomeF()"> <br>
+                        Você estuda (S / N) : <input type="text" id="varEstuda" name="Estuda-usuario" onkeyup="varNomeF()"> <br>
+                        <br>
+                        <h3>Mostrar os dados digitados na página</h3>
+                        <p>Nome : <span id="recebeNome"></span></p> <br>
+                        <p>Idade : <span id="recebeIdade"></span></p> <br>
+                        <p>Altura : <span id="recebeAltura"></span></p> <br>
+                        <p>Estuda : <span id="recebeEstuda"></span></p> <br>
+                        <br>
+                    </form>
+                </div>
+                Exibir suas variáveisna caixa de mensagem:<br>
+                <br>
+                <button type="button" onclick="dadosUsuario()"> Minhas variáveis </button>
+                <br>
                 <br>
             </h2>
             <br>

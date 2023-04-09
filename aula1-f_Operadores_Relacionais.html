@@ -40,6 +40,52 @@
         //8 não é igual a 9
         window.alert(8 != 9);
         }
+
+        function numeroMaior(){
+
+            var numA = document.getElementById("num1").value;
+            
+            var numbB = document.getElementById("num2").value;
+            
+            numero = parseInt(numA);
+            
+        }
+
+
+        function maiorQ() {
+
+            var numA = document.getElementById("num1").value;
+            
+            var numbB = document.getElementById("num2").value;
+            
+            var verificado  = numA > numbB ;
+
+            alert(verificado);
+
+        }
+        function menorQ() {
+
+            var numA = document.getElementById("num1").value;
+
+            var numbB = document.getElementById("num2").value;
+
+            var verificado  = numA < numbB ;
+
+            alert(verificado);
+        }
+        function igualQ() {
+
+            var numA = document.getElementById("num1").value;
+
+            var numbB = document.getElementById("num2").value;
+
+            var verificado  = numA == numbB ;
+
+            alert(verificado);
+        }
+
+
+
     </script>
 </head>
 <body>
@@ -140,6 +186,21 @@
                 </div>
                 <br>
                 <br>
+                <div>
+                    <form>
+                        <h2>
+                            Faça a sua verificação, colocando os números e fazendo comparações:<br>
+                        
+                            Digite um número A : <input type="number" id="num1" name="num1" onkeyup="numeroMaior()"> <br>
+                            Digite um número B : <input type="number" id="num2" name="num2" onkeyup="numeroMaior()"> <br>
+                            <br>
+                            <button type="button" id="maior" onclick="maiorQ()"> A maior que B </button> <br>
+                            <button type="button" id="menor" onclick="menorQ()"> A menor que B </button> <br>
+                            <button type="button" id="igual" onclick="igualQ()"> A igual que B </button> <br>
+                            <br>
+                        </h2>
+                    </form>
+                </div>
             </h2>
             <br>
         </div>

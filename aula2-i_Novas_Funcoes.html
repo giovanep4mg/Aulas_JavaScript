@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Novas Funçoes</title>
+    <!--CSS-->
+    <link href="style.css" rel="stylesheet">
+    <!-----JS-->
+    <script>
+
+        //Criar funções, você criar qualquer uma e pode reutilizar ela.
+        // usa a "function" com letra minúscula.
+
+
+            //somar dois valores 
+            function somar (numero1, numero2){
+
+                return numero1 + numero2;
+            }
+
+                function somarResultado(){
+                
+                    //continuação, aqui você passa os valores que serão adicionados nos parametros "numero1, numero2".
+                    alert( somar ( 8, 7 ));
+                }
+
+    </script>
+</head>
+<body>
+    <div class="menu-container">
+        <nav class="menu">
+            <h2 class="title">Menu</h2>
+            <ul>
+                <br>
+                <li><a href="aula2-e-funcao_Extrair_Elementos.html"> Funções/ Extrair Elementos</a></li>
+                <br>
+                <li><a href="aula2-f-funcao_Arredondar _valores.html"> Funções/ Arredondar valores</a></li>
+                <br>
+                <li><a href="aula2-g_funcao_Maximo_Minimo.html"> Funções/ Máximo e Mínimo</a></li>
+                <br>
+                <li><a href="aula2-h_Numero_Aleatorio.html"> Funções/ Números aleatórios</a></li>
+                <br>
+                <li><a href="aula2-i_Novas_Funcoes.html"> Novas Funções</a></li>
+                <br>
+                <li><a href="aula3-b_Evento_Clique.html"> Eventos de Clique</a></li>
+                <br>
+            </ul>
+        </nav>
+        <div class="contato">
+            contato: <br>
+            <a href="https://github.com/giovanep4mg">github</a> <br>
+            <br>
+            <a href="https://www.facebook.com/giovani.martins3/">facebook</a><br>
+            <br>
+            <a href="https://www.linkedin.com/in/giovani-teodoro-martins-4a27a4252/">Linkedin</a>
+            <br>
+        </div>
+        <div class="copyright">
+            <br>
+            &copy;Giovani Teodoro Martins
+            <br>
+        </div>
+        <div class="imagem">
+            <img src="./imagens/nego1.jpg" alt="foto do criado do site" >
+        </div>
+    </div>
+    <main class="todaPagina">
+        <div class="title"><h1>Novas Funçoes</h1></div>
+        <div class="description">
+            <h2>
+                Criar funções, você criar qualquer uma e pode ser reutilizada .<br>
+                <br>
+                Vamos criar uma função para somar dois valores.<br>
+                <br>
+            </h2>
+        </div>
+        <br>
+        <div class="exemplo">
+            <h2>
+                Dentro da tag "script", adicione :<br>
+                <br>
+                a palavra "function" letra minúscula, abre parentes, e também as chaves.<br>
+                <b>function somar ()  { </b> <br>
+                <br>
+                Dentro do parentes, vamos adicionar os parâmetros que ela tem que receber,<br>
+                para funcionar, coloque as variáveis "numero1, numero2".<br>
+                <b>function somar ( numero1, numero2 ) { </b> <br>
+                <br>
+                Agora vamos dizer que ela retorne o resultado da soma dessas variáveis: <br>
+                <br>
+                <b>return numero1 + numero2;</b> vai retorna o resultado .<br>
+                <br>
+                Feche a "function" => <b>}</b>
+                <br>
+                <br>
+                Agora na hora de criar o alert, para ser exibida na tela,<br>
+                vamos passar os valores das variáveis "numero1, numero2":<br>
+                <br>
+                <b>alert( somar( 8, 7 ) );</b> => numero1 = "8", numero2 = "7" <br>
+                <br>
+                <br>
+                Veja como é o código:<br>
+                <div class="imagem">
+                    <img src="./imagens/funcao-criar-funcoes.png" alt="print do código">
+                </div>
+                <br>
+                <br>
+                Agora veja como seria, clicando no botão abaixo: <br>
+                <br>
+                Exibir <b>função somar ( 8, 7 ) </b>: <br>
+                <button type="submit" onclick="somarResultado( )"> Exibir </button>
+                <br>
+                <br>
+                <br>
+            </h2>
+        </div>
+    </main>
+</body>
+</html>

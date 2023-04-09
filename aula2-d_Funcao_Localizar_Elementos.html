@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Localizar Elementos</title>
+    <!--CSS-->
+    <link href="style.css" rel="stylesheet">
+    <!----JS-->
+    <script>
+        //vai te dá a posição da letra, conta apartir de 0,1,2,3...
+        //então se retorna 0 é 1, se for 2 é 1, se for 3 é 2...
+        //Usada para fazer validações,emails,...
+
+        //variável
+        var nome = "Giovani";
+
+        function exibirInicio(){
+        
+            //retorna a primeira letra "i"
+            alert( "A posição do 'v' é : "+nome.indexOf("v"));
+        }
+
+        function exibirFinal(){
+        
+            //retorna a última letra "a"
+            alert( "A posição do 'a' é : "+nome.lastIndexOf("a"));
+        }
+        
+    </script>
+</head>
+<body>
+    <div class="menu-container">
+        <nav class="menu">
+            <h2 class="title">Menu</h2>
+            <ul>
+                <br>
+                <li><a href="aula1-P_Vetores_.html"> Vetor "banco de dados"</a></li>
+                <br>
+                <li><a href="aula1-Q_Vetor_de_Objetos.html"> Vetor de objetos</a></li>
+                <br>
+                <li><a href="aula2-b_Funcao_Contar_Caracteres.html"> Funções/ Contar caracteres</a></li>
+                <br>
+                <li><a href="aula2-c_Funcao_Maiucusla_Minuscula.html"> Funções/ Maiúscula e Minúscula</a></li>
+                <br>
+                <li><a href="aula2-d_Funcao_Localizar_Elementos.html"> Funções/ Localizar elementos</a></li>
+                <br>
+                <li><a href="aula2-e-funcao_Extrair_Elementos.html"> Funções/ Extrair Elementos</a></li>
+                <br>
+            </ul>
+        </nav>
+        <div class="contato">
+            contato: <br>
+            <a href="https://github.com/giovanep4mg">github</a> <br>
+            <br>
+            <a href="https://www.facebook.com/giovani.martins3/">facebook</a><br>
+            <br>
+            <a href="https://www.linkedin.com/in/giovani-teodoro-martins-4a27a4252/">Linkedin</a>
+            <br>
+        </div>
+        <div class="copyright">
+            <br>
+            &copy;Giovani Teodoro Martins
+            <br>
+        </div>
+        <div class="imagem">
+            <img src="./imagens/nego1.jpg" alt="foto do criado do site" >
+        </div>
+    </div>
+    <main class="todaPagina">
+        <div class="title"><h1>Localizar Elementos</h1></div>
+        <div class="description">
+            <h2>
+                Vai te dá a <b>posição da letra</b>, conta apartir de 0,1,2,3.... <br>
+                <br>
+                Então se retorna 0 é 1, se for 2 é 1, se for 3 é 2... <br> 
+                Usada para fazer validações, emails,.... <br>
+                <br>
+                <b>indexOf</b> conta aparti do inicio. <br>
+                <b>lastIndexOf</b> conta de trás para frente. <br>
+            </h2>
+        </div>
+        <br>
+        <div class="exemplo">
+            <h2>
+                <b>Exemplo de código:</b><br>
+                <br>
+                Abra a tag "script", dentro dela coloque: <br>
+                <br>
+                //variavel <br>
+                <b>var nome = "Giovani";</b> <br>
+                <br>
+                <br>
+                //retorna a primeira letra "i" <br>
+                <b>alert( "A posição do 'v' é : "+nome.indexOf("v"));;</b><br>
+                <br>
+                //retorna a última letra "a" <br>
+                <b>alert( "A posição do 'a' é : "+nome.lastIndexOf("a"));</b><br>
+                <br>
+                Fecha a tag "/script" <br>
+                <br>
+                Veja como é o código:<br>
+                <div class="imagem">
+                    <img src="./imagens/funcao-localizar-elementos.png" alt="print do código">
+                </div>
+                <br>
+                <br>
+                Agora veja como seria, clicando no botão abaixo: <br>
+                <br>
+                Exibir <b>contando do Inicio ao fim</b>: <br>
+                <button type="submit" onclick="exibirInicio()"> Exibir </button>
+                <br>
+                <br>
+                Exibir <b>contando do final para o inicio</b>: <br>
+                <button type="submit" onclick="exibirFinal()"> Exibir </button>
+                <br>
+                <br>
+                <br>
+            </h2>
+        </div>
+    </main>
+</body>
+</html>

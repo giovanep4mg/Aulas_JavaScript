@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Máximo e Mínimo</title>
+    <!--CSS-->
+    <link href="style.css" rel="stylesheet">
+    <!--------JS----->
+    <script>
+       
+            function valorMinimo(){
+            
+                //obter o menor valor, neste caso será o "-25 "
+                alert(Math.min(-10, 5,0 ,100 ,-25, 2));
+            }
+
+            function valorMaximo(){
+            
+                //obter o maior número, neste caso será o "15"
+                alert(Math.max(5, 7, 9, -13, 0, 15));
+            }
+
+     </script>
+</head>
+<body>
+    <div class="menu-container">
+        <nav class="menu">
+            <h2 class="title">Menu</h2>
+            <ul>
+                <br>
+                <li><a href="aula2-c_Funcao_Maiucusla_Minuscula.html"> Funções/ Maiúscula e Minúscula</a></li>
+                <br>
+                <li><a href="aula2-d_Funcao_Localizar_Elementos.html"> Funções/ Localizar elementos</a></li>
+                <br>
+                <li><a href="aula2-e-funcao_Extrair_Elementos.html"> Funções/ Extrair Elementos</a></li>
+                <br>
+                <li><a href="aula2-f-funcao_Arredondar _valores.html"> Funções/ Arredondar valores</a></li>
+                <br>
+                <li><a href="aula2-g_funcao_Maximo_Minimo.html"> Funções/ Máximo e Mínimo</a></li>
+                <br>
+                <li><a href="aula2-h_Numero_Aleatorio.html"> Funções/ Números aleatórios</a></li>
+                <br>
+            </ul>
+        </nav>
+        <div class="contato">
+            contato: <br>
+            <a href="https://github.com/giovanep4mg">github</a> <br>
+            <br>
+            <a href="https://www.facebook.com/giovani.martins3/">facebook</a><br>
+            <br>
+            <a href="https://www.linkedin.com/in/giovani-teodoro-martins-4a27a4252/">Linkedin</a>
+            <br>
+        </div>
+        <div class="copyright">
+            <br>
+            &copy;Giovani Teodoro Martins
+            <br>
+        </div>
+        <div class="imagem">
+            <img src="./imagens/nego1.jpg" alt="foto do criado do site" >
+        </div>
+    </div>
+    <main class="todaPagina">
+        <div class="title"><h1>Máximo e Mínimo</h1></div>
+        <div class="description">
+            <h2>
+                Para obter o menor ou maior valor de determinados produtos,<br>
+                Vai pegar os valores maiores ou menores, por exemplo de um banco de dados.<br>
+                <br>
+                Usaremos o "Math" com suas funções "min, max":<br>
+                <br>
+                <b>Math.min</b> => vai mostrar o menor número .<br>
+                <b>Math.max</b> => vai mostrar o maior número .<br>
+                <br> 
+                Você pode usar um vetor => banco de dados "temporário" ou <br>
+                você também pode passar os valores como parâmetros, dentro do "()".<br>
+                <br>
+                <b>Math.min( -10, 5, 0 , 100 , -25, 2 )</b> <br> 
+                <b>Math.max( 5, 7, 9, -13, 0, 15 )</b> <br> 
+                <br>
+                Vamos colocar dentro do "alert" para ser exibido na caixa de mensagem:<br>
+                <b>alert( Math.min( -10, 5, 0 , 100 , -25, 2 ) );</b> <br>
+                <b>alert( Math.max( 5, 7, 9, -13, 0, 15 ) );</b> <br>
+                <br>
+            </h2>
+        </div>
+        <br>
+        <div class="exemplo">
+            <h2>
+                <b>Exemplo de código:</b><br>
+                <br>
+                Abra a tag "script", dentro dela coloque:<br>
+                <br>
+                //obter o menor valor, neste caso será o "-25 " <br>
+                <b>alert( Math.min( -10, 5, 0 , 100 ,-25, 2 ) );</b> <br>
+                <br>
+                <br>
+                //obter o maior número, neste caso será o "15" <br>
+                <b>alert( Math.max( 5, 7, 9, -13, 0, 15 ) );</b> <br>
+                <br>
+                <br>
+                Fecha a tag "/script" <br>
+                <br>
+                Veja como é o código:<br>
+                <div class="imagem">
+                    <img src="./imagens/funcao-maximo-minimo.png" alt="print do código">
+                </div>
+                <br>
+                <br>
+                Agora veja como seria, clicando no botão abaixo: <br>
+                <br>
+                Exibir <b>valor máximo</b> => ( 5, 7, 9, -13, 0, 15 ) : <br>
+                <button type="submit" onclick="valorMaximo()"> Exibir </button>
+                <br>
+                <br>
+                Exibir <b>valor mínimo</b> => ( -10, 5, 0 , 100 ,-25, 2 ): <br>
+                <button type="submit" onclick="valorMinimo()"> Exibir </button>
+                <br>
+                <br>
+                <br>
+            </h2>
+        </div>
+    </main>
+</body>
+</html>

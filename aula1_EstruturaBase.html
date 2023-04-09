@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estrura Base</title>
+    <!--CSS-->
+    <link href="style.css" rel="stylesheet">
+    <!---isso é para fazer comentários no html-->
+
+    <script>
+        //comando que vai fazer aparecer uma janela, popup, com essa frase
+
+
+        //window.alert("Aprendendo Java Script.");
+
+        //window = biblioteca
+        //alert = sub-biblioteca
+        //pode usar somente o "alert" a sub-biblioteca.
+
+        function mostrarJanela(){
+
+            window.alert("Aprendendo Java Script.");
+
+        }
+    </script>
+
+</head>
+<body>
+    <div class="menu-container">
+        <nav class="menu">
+            <h2 class="title">Menu</h2>
+            <ul>
+                <br>
+                <li><a href="index.html">O que é JavaScript </a></li>
+                <br>
+                <li><a href="aula1_EstruturaBase.html">Estrutura Base do JS </a></li>
+                <br>
+                <li><a href="aula1-E_Variaveis.html"> Variáveis </a></li>
+                <br>
+            </ul>
+        </nav>
+        <div class="contato">
+            contato: <br>
+            <a href="https://github.com/giovanep4mg">github</a> <br>
+            <br>
+            <a href="https://www.facebook.com/giovani.martins3/">facebook</a><br>
+            <br>
+            <a href="https://www.linkedin.com/in/giovani-teodoro-martins-4a27a4252/">Linkedin</a>
+            <br>
+        </div>
+        <div class="copyright">
+            <br>
+            &copy;Giovani Teodoro Martins
+            <br>
+        </div>
+        <div class="imagem">
+            <img src="./imagens/nego1.jpg" alt="foto do criado do site" >
+        </div>
+    </div>    
+    <main class="todaPagina">
+        <div class="title"><h1>Estrutura base do JavaScript</h1></div>
+        <div class="description">
+            <h2>
+                <div class="imagem">
+                    <img src="./imagens/estrutura-base-JS.png" alt="print do código">
+                </div>
+                Essa é a estrutura base do JS.<br>
+                Dentro da tag <b>head</b> você adiciona a tag do JavaScript => <b>script</b>.<br>
+                <br>
+                Dentro da tag <b>script</b> será adicionado os códigos  java Script.<br>
+                <br>
+            </h2>
+        </div>
+        <div>
+            <div class="title"><h1>Caixa de mensagem</h1></div>
+            <div class="description">
+                <h2>       
+                    <br>
+                    Caixa de mensagem, é essa janelinha, para dá um aviso ao usuário, orienta ele no site.<br>
+                    Por exemplo, o usuário não preencheu todo o formulário, ai aparece essa caixa de mensagem.<br>
+                    Avisando sobre algo, que você fez ou deve fazer ou deixou de fazer.<br>
+                    <br>
+                    <b>lembrete</b><br>
+                    Para colocar comentários no código, como se fosse uma anotação, se for dentro do JavaScript,<br>
+                    coloque  duas barras "//", e escreva na frente, que não será lido como um código.<br>
+                    <br>
+                </h2>
+            </div>    
+        </div>
+        <div class="exemplo">
+            <h2>
+                Para fazer é assim, dentro da tag "script" adiciona esse código:<br>
+                <br>
+                ________window.alert("Aprendendo Java Script.");<br>
+                <br>
+                <br>
+                Que significa:<br>
+                window = biblioteca <br>
+                alert = sub-biblioteca <br>
+                * pode usar somente o "alert" a sub-biblioteca. <br>
+                Veja como é o código:<br>
+                <div class="imagem">
+                    <img src="./imagens/caixa-de-mensagem-1.png" alt="print do código">
+                </div>
+                <br>
+                Agora veja como seria, clicando no botão abaixo:<br>
+                <br>
+                <button type="button" onclick="mostrarJanela()"> Mostrar caixa de mensagem </button>
+                <br>
+            </h2>
+        </div>
+        <br>
+    </main>
+    <br>
+</body>
+</html>

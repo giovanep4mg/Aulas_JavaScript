@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Atributos</title>
+  <!--CSS-->
+  <link href="style.css" rel="stylesheet">
+  <!---JS---->
+  <script>
+    /*
+    Realiza a troca de links, você clica no link vai para "A", volta e escolhe "alterar link", 
+    quando você clicar no mesmo link vai para "B".
+    */
+
+
+            //Função
+            function alterarLink(){
+     
+
+            // salva na var "link", o que tem na tag "a", na posição "0"
+            var link = document.getElementsByTagName("a")[8];
+               console.log(link) ;
+
+            // pega esse novo link e salva na var link
+            link.href = "https://github.com/giovanep4mg";
+
+      
+
+            }
+
+
+  </script>
+<body>
+   <div class="menu-container">
+		<nav class="menu">
+				<h2 class="title">Menu</h2>
+				<ul>
+						<br>
+						<li><a href="aula4-a_Seletor.html"> Seletor de HTML</a></li>
+						<br>
+						<li><a href="aula4-b_Seletores_classe.html"> Seletor de CLASSE</a></li>
+						<br>
+						<li><a href="aula4-c_Seletor_Id.html"> Seletor de ID</a></li>
+						<br>
+						<li><a href="aula4-d_Manipular_o_CSS.html"> Manipular o CSS</a></li>
+						<br>
+						<li><a href="aula4-e_Atributos.html"> Atributos</a></li>
+						<br>
+                  <li><a href="index.html"></a></li>
+						<br>
+				</ul>
+		</nav>
+		<div class="contato">
+         contato: <br>
+         <a href="https://github.com/giovanep4mg">github</a> <br>
+         <br>
+         <a href="https://www.facebook.com/giovani.martins3/">facebook</a><br>
+         <br>
+         <a href="https://www.linkedin.com/in/giovani-teodoro-martins-4a27a4252/">Linkedin</a>
+         <br>
+     </div>
+     <div class="copyright">
+         <br>
+         &copy;Giovani Teodoro Martins
+         <br>
+     </div>
+     <div class="imagem">
+         <img src="./imagens/nego1.jpg" alt="foto do criado do site" >
+     </div>
+   </div> 
+   <main class="todaPagina">
+      <div class="title"><h1>Atributos</h1></div>
+      <div class="description">
+         <h2>
+            <b>Atributos</b> são complementações, aparece depois da tag.<br>
+            <br>
+            Usaremos como exemplo a tag <b>a</b> seu atributo será o <b>href</b>,<br>
+            que seria um link para algum site, página,<br>
+            <br>
+            Iremos fazer a troca desse atributo "a página do site",<br>
+            quando você clicar em um botão, o link será trocado.<br>
+            <br>
+            Quando clicar, ai invés de ir para um lado o link te levará para outro lado.<br>
+            <br>
+         </h2>
+      </div>
+      <div class="exemplo">
+         <h2> 
+            <br>
+            Primeiro vamos criar um link, dentro da tag "body",<br>
+            pode ser qualquer link só para teste, usando a tag "a":<br>
+            <br>
+            <b>a href="https://www.facebook.com/giovani.martins3/">clique aqui</b> <br>
+            <br>
+            Depois crie um "button", com evento "onclick" que vai acionar a função 'alterarLink()':<br>
+            <br>
+            <b>button onclick="alterarLink()"</b>
+            <br>
+            Veja como é o código:<br>
+            <div class="imagem">
+               <img src="./imagens/atributos-1.png" alt="print do código">
+            </div>
+            <br>
+            Agora vamos criar a função:<br>
+            <b>Exemplo de código:</b><br>
+            <br>
+            Abra a tag "script", dentro dela coloque: <br>
+            <br>
+            __//funçao.<br>
+            __<b>function alterarLink() { </b> <br>
+            <br>
+            <br>
+            ___// obter um link >> <br>
+            ___// salva na var "link", o que tem na tag "a", na posição "0"<br>
+            ___<b>var link = document.getElementsByTagName("a")[0];</b><br>
+            <br>
+            <br>
+            _______// pega esse novo link e salva na var link<br>
+            _______<b>link.href = "https://github.com/giovanep4mg";</b><br>
+            <br>
+            <br>
+            __<b> } </b><br>
+            <br>
+            Veja como é o código:<br>
+            <div class="imagem">
+               <img src="./imagens/atributos-2.png" alt="print do código">
+            </div>
+            <br>
+            <br>
+            Teste prático, o link é para a página do Facebook,<br>
+            mas se clicar no botão para alterar link, será para o Github.<br>
+            <br>
+            <div>
+               <!--link de endereço web, sites, páginas, etc..-->
+               <br>
+               <a href="https://www.facebook.com/giovani.martins3/">clique aqui</a><br>
+               <br>
+               <!--cria um botão que vai acionar a Função "alterarLink"-->
+               <button onclick="alterarLink()">Alterar link</button>
+               <br>
+         </div>
+         <br>
+         </h2>
+         <br>
+      </div>
+      <br>
+  </main>
+</body>
+</html>

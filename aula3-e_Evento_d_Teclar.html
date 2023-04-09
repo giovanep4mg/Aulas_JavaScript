@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento de Clicar</title>
+    <!--CSS-->
+    <link href="style.css" rel="stylesheet">
+    <!----JS---->
+    <script>
+        /*
+        onkeyUp = exibe o caractere e depois executa a ação.
+
+        onKeyDown = executa a ação e depois exibi o caractere.
+        
+        onKeyPress = executa a ação de depois exibi o caractere.
+        Não tem suporte as seguintes teclas:
+        F1..F2,ALT,CTRL,SHIFT,....
+
+        */
+                //função
+                function exibir(){
+
+                //Obter o valor do campo texto
+                var campo = document.getElementById("campo").value;
+            
+                //exibir o conteudo digitado no campo
+                alert(campo);
+                
+                }
+                //função
+                function exibir2(){
+
+                    //Obter o valor do campo texto
+                    var campo1 = document.getElementById("campo1").value;
+
+                    //exibir o conteudo digitado no campo
+                    alert(campo1);
+
+                }
+
+
+    </script>
+</head>
+<body>
+    <div class="menu-container">
+        <nav class="menu">
+            <h2 class="title">Menu</h2>
+            <ul>
+                <br>
+                <li><a href="aula2-i_Novas_Funcoes.html"> Novas Funções</a></li>
+                <br>
+                <li><a href="aula3-b_Evento_Clique.html"> Eventos de Clique</a></li>
+                <br>
+                <li><a href="aula3-c_Evento_Alteracao.html"> Eventos/ Alteração</a></li>
+                <br>
+                <li><a href="aula3-d_Evento_Carregamento.html"> Eventos/ Carregamento</a></li>
+                <br>
+                <li><a href="aula3-e_Evento_d_Teclar.html"> Evento/ teclar</a></li>
+                <br>
+                <li><a href="aula4-a_Seletor.html"> Seletor de HTML</a></li>
+                <br>
+            </ul>
+        </nav>
+        <div class="contato">
+            contato: <br>
+            <a href="https://github.com/giovanep4mg">github</a> <br>
+            <br>
+            <a href="https://www.facebook.com/giovani.martins3/">facebook</a><br>
+            <br>
+            <a href="https://www.linkedin.com/in/giovani-teodoro-martins-4a27a4252/">Linkedin</a>
+            <br>
+        </div>
+        <div class="copyright">
+            <br>
+            &copy;Giovani Teodoro Martins
+            <br>
+        </div>
+        <div class="imagem">
+            <img src="./imagens/nego1.jpg" alt="foto do criado do site" >
+        </div>
+    </div>   
+        <main class="todaPagina">
+            <div class="title"><h1>Evento de Teclar</h1></div>
+            <div class="description">
+                <h2>
+                    Existem apenas 3 eventos de teclados no Java Script, são eles:<br>
+                    <br>
+                    <b>onkeyUp</b><br>
+                    Exibe o caractere e depois executa a ação.<br>
+                    <br>
+                    <b>onKeyDown</b><br>
+                    Executa a ação e depois exibi o caractere.<br>
+                    <br>
+                    <b>onKeyPress</b> <br>
+                    Executa a ação de depois exibi o caractere.<br>
+                    Não tem suporte as seguintes teclas:<br>
+                    F1..F2,ALT,CTRL,SHIFT,....<br>
+                    <br>
+                </h2>
+            </div>
+            <div class="exemplo">
+                <h2>
+                    <b>Exemplo de código:</b><br>
+                    <br>
+                    No html, no "body", vamos adicionar um campo de texto para digitar, para isso<br>
+                    adicione um "input", do tipo "text", com id "campo", e colocaremos o evento nele.<br>
+                    <br>
+                    <b>input type="texto" id="campo" onkeyup="exibir()"</b>  <br>
+                    <br>
+                    O evento é o "onkeyup", que vai acionar a função "exibir()"
+                    <br>
+                    Veja como é o código:<br>
+                    <div class="imagem">
+                        <img src="./imagens/evento-teclar-1.png" alt="print do código">
+                    </div>
+                    <br>
+                    <br>
+                    <b>SCRIPT</b>
+                    abra a tag "script", dentro dela coloque : <br>
+                    <br>
+                    __//função.<br>
+                    __<b>function exibir (){</b><br>
+                    <br>
+                    _________// Obter o valor que foi digitado no campo de texto  <br>
+                    _________<b>var campo = document.getElementById("campo").value;</b> <br>
+                    <br>
+                    <br>
+                    __________//exibir o conteúdo digitado no campo <br>
+                    __________<b>alert(campo);</b>  <br>
+                    <br>
+                    __<b>}</b><br>
+                    <br>
+                    Veja como é o código:<br>
+                    <div class="imagem">
+                        <img src="./imagens/evento-teclar-2.png" alt="print do código">
+                    </div>
+                    <br>
+                    <br>
+                    <b>onkeyUp</b> <br>
+                    Essa função => Vai pegar a primeiro caractere digitado, mostrar na "janelinha",<br>
+                    fará isso toda vez que for digitado um caractere, e somando ao que já foi digitado.<br>
+                    <br>
+                    <div>
+                        <input type="text" id="campo" onkeyup="exibir()">
+                    </div>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                    <b>onkeydown</b> <br>
+                    Essa função => Vai pegar a primeiro caractere digitado, <b>NÃO</b> vai mostrar na "janelinha",<br>
+                    SÓ vai mostrar depois que for digitado outro caractere.<br>
+                    fará isso toda vez que for digitado um caractere, e somando ao que já foi digitado.<br>
+                    <br>
+                    <div>
+                        <input type="text" id="campo1" onkeydown="exibir2()">
+                    </div>
+                    <br>
+                    <br>
+                </h2>
+                <br>        
+            </div>
+            <br>
+        </main>
+    </body>
+</html>

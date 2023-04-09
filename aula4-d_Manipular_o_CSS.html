@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Manipular o CSS </title>
+	<!--CSS-->
+	<link href="style.css" rel="stylesheet">
+	<!-----JS---->
+	<script>
+		//Faz modificações no texto, CSS atráves da função, dos comando adicionados nla.
+		//
+
+		//Função
+		function acao(){
+
+		   //obter o elemento h1 => pega o h1, na posição "1" 
+		   var texto =document.getElementsByTagName("h1")[1];
+
+
+		   //CSS = muda "estilo da cor", do que tem na var "texto"
+		   texto.style.color = "#ffAa21";
+
+		   //CSS = muda o "tamanho da fonte", do que tem na var "texto"
+		   texto.style.fontSize = "5rem";
+
+
+		   // muda o texto dentro da var "texto"
+		   texto.innerHTML = "Curso de Java Script";
+
+      }
+
+
+	</script>
+</head>
+<body>
+	<div class="menu-container">
+		<nav class="menu">
+				<h2 class="title">Menu</h2>
+				<ul>
+						<br>
+						<li><a href="aula3-e_Evento_d_Teclar.html"> Evento/ teclar</a></li>
+						<br>
+						<li><a href="aula4-a_Seletor.html"> Seletor de HTML</a></li>
+						<br>
+						<li><a href="aula4-b_Seletores_classe.html"> Seletor de CLASSE</a></li>
+						<br>
+						<li><a href="aula4-c_Seletor_Id.html"> Seletor de ID</a></li>
+						<br>
+						<li><a href="aula4-d_Manipular_o_CSS.html"> Manipular o CSS</a></li>
+						<br>
+						<li><a href="aula4-e_Atributos.html"> Atributos</a></li>
+						<br>
+				</ul>
+		</nav>
+		<div class="contato">
+            contato: <br>
+            <a href="https://github.com/giovanep4mg">github</a> <br>
+            <br>
+            <a href="https://www.facebook.com/giovani.martins3/">facebook</a><br>
+            <br>
+            <a href="https://www.linkedin.com/in/giovani-teodoro-martins-4a27a4252/">Linkedin</a>
+            <br>
+        </div>
+        <div class="copyright">
+            <br>
+            &copy;Giovani Teodoro Martins
+            <br>
+        </div>
+        <div class="imagem">
+            <img src="./imagens/nego1.jpg" alt="foto do criado do site" >
+        </div>
+	</div> 
+	<main class="todaPagina">
+		<div class="title"><h1>Manipular o CSS </h1></div>
+		<div class="description">
+			<h2>
+				Para fazer modificações no CSS usando o JavaScript.<br>
+            <br>
+				Usa o mesmo contesto, que você usa no CSS.<br>
+            <br>
+				Mas no JS não há "hifen" entre alguns dos comados do "CSS", exemplo:<br>
+				<b>background-color</b> => fica assim no JS => <b>backgroundcolor</b><br>
+			</h2>
+		</div>
+		<br>
+		<div class="exemplo">
+			<h2>
+            <br>
+            Vamos começar colocando dentro do "body" a tag <b>h1</b> com o texto ="JavaScript" <br>
+            <b>h1</b> JavaScript <b>/h1</b> <br>
+            <br>
+            Crie agora um "button" e nele colocaremos um evento, que vai acionar uma função:<br>
+            <b>button onclick="acao()"</b> "Clique aqui" <b>/button</b> <br>
+            <br> 
+            Veja como é o código:<br>
+            <div class="imagem">
+               <img src="./imagens/css-1.png" alt="print do código">
+            </div>
+            <br>
+            Agora para fazer modificações no "h1", vamos na tag <b>script</b> e cria a função:<br>
+            <br>
+            <b>Exemplo de código:</b><br>
+				<br>
+				Abra a tag "script", dentro dela coloque: <br>
+				<br>
+				__//funçao.<br>
+				__<b>function acao () { </b> <br>
+				<br>
+				<br>
+				______//obter o elemento h1 = pega o h1, na posição "2" <br>
+				______<b>var texto =document.getElementsByTagName("h1")[2];</b><br>
+				<br>
+				<br>
+				_________//CSS => coloca uma cor na var => "texto" <br>
+				_________<b>texto.style.color = "#ffAa21";</b><br>
+				<br>
+				<br>
+				_________//CSS = muda o "tamanho da fonte", do que tem na var "texto" <br>
+				_________<b>texto.style.fontSize = "5rem";</b><br>
+				<br>
+				<br>
+				_______// vai modificar o texto dentro da var "texto"<br>
+				_______<b>texto.innerHTML = "Curso de JavaScript";</b> <br>
+				<br>
+				__<b> } </b> fecha o "function"<br>
+				<br>
+            Veja como é o código:<br>
+            <div class="imagem">
+               <img src="./imagens/css-2.png" alt="print do código">
+            </div>
+            <br>
+            <br>
+				Teste prático, clique no botão abaixo e veja se será feito as modificações:<br>
+            Para voltar, atualize a página.<br>
+				<br>
+            <div>
+               <!--cria  um texto na página-->
+               <h1>JavaScript</h1>
+      
+               <!--cria botão na página, que vai acionar a Função -->
+               <button onclick="acao()">Clique aqui</button>
+               <br>
+            </div>
+            <br>
+            <br>
+			</h2>
+         <br>
+		</div>
+	</main>
+</body>
+</html>

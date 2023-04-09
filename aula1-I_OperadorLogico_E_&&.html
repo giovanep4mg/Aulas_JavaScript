@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operador Lógico E "&&" </title>
+    <!--CSS-->
+    <link href="style.css" rel="stylesheet">
+    <script>
+        //variável
+        var media = 10;
+        var faltas = 5;
+
+        function operadorE(){
+        
+            //condicional + operador = os dois tem que dá certo
+            if((media >= 7) && (faltas <= 15)){
+                alert("Aprovado!");
+            }else{
+                alert("Reprovado!");
+            }
+        }
+
+    </script>
+</head>
+<body>
+    <div class="menu-container">
+        <nav class="menu">
+            <h2 class="title">Menu</h2>
+            <ul>
+                <br>
+                <li><a href="aula1-E_Variaveis.html"> Variáveis </a></li>
+                <br>
+                <li><a href="aula1-f_Operadores_Relacionais.html">Operadores Relacionais </a></li>
+                <br>
+                <li><a href="aula1-g_Condicional_Simples.html"> Condicional Simples </a></li>
+                <br>
+                <li><a href="aula1-h_Condicional_Alinhada.html"> Condicional Aninhada </a></li>
+                <br>
+                <li><a href="aula1-I_OperadorLogico_E_&&.html">Operador Lógico E "&&" </a></li>
+                <br>
+                <li><a href="aula1-J_OperadorLogico_OU.html">Operador Lógico OU "||" </a></li>
+                <br>
+            </ul>
+        </nav>
+        <div class="contato">
+            contato: <br>
+            <a href="https://github.com/giovanep4mg">github</a> <br>
+            <br>
+            <a href="https://www.facebook.com/giovani.martins3/">facebook</a><br>
+            <br>
+            <a href="https://www.linkedin.com/in/giovani-teodoro-martins-4a27a4252/">Linkedin</a>
+            <br>
+        </div>
+        <div class="copyright">
+            <br>
+            &copy;Giovani Teodoro Martins
+            <br>
+        </div>
+        <div class="imagem">
+            <img src="./imagens/nego1.jpg" alt="foto do criado do site" >
+        </div>
+    </div>
+    <main class="todaPagina">
+        <div class="title"><h1>Operadores "E" ( && )</h1></div>
+        <div class="description">
+            <h2>
+                Muito usado junto com o condicional "if", para fazer comparações entre as informações.<br>
+                O "if" é usado para verificar, algo aconteceu entao fará tal coisa se não faz outra coisa.<br>
+                <br>
+                Operador Lógico E <b>" && "</b>, dá mais opções para fazer essa verificação,<br>
+                você pode fazer várias verificações.<br>
+                <br>
+                Como no exemplo que vamos exibir:<br>
+                Que é pegar as notas e as faltas do aluno, fazer uma verificação e de acordo com as notas e faltas, <br>
+                avisar se o aluno passou ou não.<br>
+                <br>
+                <div class="exemplo">
+                    Vamos para o código:<br>
+                    Abra a tag "script", dentro dela adicione as variáveis,<br>
+                    <b>var media = 10; </b> a variável "media" vai receber "10".<br>
+                    <b>var faltas = 5; </b> a variável "faltas" vai receber "5".<br>
+                    <br>
+                    Agora faremos o "if" com o operador lógico "E":<br>
+                    <br>
+                    <b>if ( ( media >= 7 ) && ( faltas *= 15 ) )</b> * é o sinal de menor*  {<br> 
+                    ____<b>alert("Aprovado!");</b>   <br>
+                    }<b>else</b> {<br>
+                    ____<b>alert("Reprovado!");</b> <br>
+                    } 
+                    <br>
+                     Fecha a tag "/script"
+                    <br>
+                    <br>
+                    Veja como é o código:<br>
+                    <div class="imagem">
+                        <img src="./imagens/operador-logico-E.png" alt="print do código">
+                    </div>
+                    <br>
+                    <br>
+                    No exemplo, a condição para ser aprovado é :<br>
+                    "media for maior ou igual a 7" <b>&&</b> "faltas for menor ou igual a 15"<br>
+                    <b></b>
+                    <b>Atenção:</b> Para ser aprovado tem que está dentro das duas condições "media e faltas".<br>
+                    <br>
+                    Se der outro resultado diferente, será reprovado.<br>
+                    <br>
+                    Agora veja como seria, clicando no botão abaixo:<br>
+                    <button type="submit" onclick="operadorE()"> Verificar </button>
+                    <br>
+                    <br>  
+                </div>
+                <br>
+            </h2>
+            <br>
+        </div>
+        <br>
+    </main>
+</body>
+</html>

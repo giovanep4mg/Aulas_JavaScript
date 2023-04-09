@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vetor de Objetos</title>
+    <!--CSS-->
+    <link href="style.css" rel="stylesheet">
+    <!------JS-->
+    <script>
+        /*
+        Vetor de Objeto,guarda mais informações naquela linha, como o exemplo abaixo:
+        nome do curso, carga horária, sala.
+        */
+
+        
+            //variável vetor
+            var cursos = [
+                    
+                    {nome:"HTML",carga:20,sala:4},
+                    {nome:"CSS",carga:10,sala:5},
+                    {nome:"JAVASCRIPT",carga:25,sala:6}
+                   
+                ]
+            
+                function exibir0(){
+                
+                    // exibir o nome do curso na posição [0], dá espaço, e a carga na posição[0]
+                    alert("Curso : " +cursos[0].nome+  "  carga horária: " +cursos[0].carga);
+                }
+                
+                function exibir2(){
+                
+                    // exibir nome do curso na posição [2], dá espaço, e a sala na posição [2]
+                    alert("Curso : "+cursos[2].nome+ "  sala: "+cursos[2].sala);
+                }
+
+    </script>
+</head>
+<body>
+    <div class="menu-container">
+        <nav class="menu">
+            <h2 class="title">Menu</h2>
+            <ul>
+                <br>
+                <li><a href="aula1-M_Lacos_de_Repeticao_Enquanto.html">Laço de Repetição Enquanto "WHILE"</a></li>
+                <br>
+                <li><a href="aula1-N_laco_de_Repeticao_Faca_Enquanto.html">Laço de Repetição faça/enquanto "DO / WHILE"</a></li>
+                <br>
+                <li><a href="aula1-O_Laco_Para.html">Laço de Repetição PARA " FOR "</a></li>
+                <br>
+                <li><a href="aula1-P_Vetores_.html"> Vetor "banco de dados"</a></li>
+                <br>
+                <li><a href="aula1-Q_Vetor_de_Objetos.html"> Vetor de objetos</a></li>
+                <br>
+                <li><a href="aula2-b_Funcao_Contar_Caracteres.html"> Funções/ Contar caracteres</a></li>
+                <br>
+            </ul>
+        </nav>
+        <div class="contato">
+            contato: <br>
+            <a href="https://github.com/giovanep4mg">github</a> <br>
+            <br>
+            <a href="https://www.facebook.com/giovani.martins3/">facebook</a><br>
+            <br>
+            <a href="https://www.linkedin.com/in/giovani-teodoro-martins-4a27a4252/">Linkedin</a>
+            <br>
+        </div>
+        <div class="copyright">
+            <br>
+            &copy;Giovani Teodoro Martins
+            <br>
+        </div>
+        <div class="imagem">
+            <img src="./imagens/nego1.jpg" alt="foto do criado do site" >
+        </div>
+    </div>
+    <main class="todaPagina">
+        <div class="title"><h1>Vetores de Objetos</h1></div>
+        <div class="description">
+            <h2>
+                O vetor convencional, guarda uma informação por linha.<br>
+                <br>
+                O <b>Vetor de objetos</b> guarda mais informações, mais caracteristicas, mais dados.<br>
+                Guarda mais informações naquela linha, como o exemplo abaixo:<br>
+                nome do curso, carga horária, sala.<br>
+                <br>
+            </h2>
+        </div>
+        <br>
+        <div class="exemplo">
+            <h2>
+                <b>Exemplo de código:</b><br>
+                <br>
+                Abre a tag "script", dentro dela coloque:<br>
+                <br>
+                //variável vetor<br>
+                <b>var cursos = [</b> br>
+                <b>________{nome:"HTML", carga:20, sala:4},</b><br>
+                <b>________{nome:"CSS", carga:10, sala:5},</b><br>
+                <b>________{nome:"JAVASCRIPT", carga:25, sala:6}</b><br>
+                <b>______]</b><br>
+                <br>
+                <br>
+                // exibirá o nome do curso na posição [0], dá espaço, e a carga na posição[0]<br>
+                <b>alert(cursos[0].nome+" "+cursos[0].carga);</b><br>
+                <br>
+                <br>
+                //vai exibir nome do curso na posição [2], dá espaço, e a sala na posição [2]. <br>
+                <b>alert(cursos[2].nome+" "+cursos[2].sala);</b> <br>
+                <br>
+                Fecha a tag "/script"<br>
+                <br>
+                Veja como é o código:<br>
+                <div class="imagem">
+                    <img src="./imagens/vetor-objeto.png" alt="print do código">
+                </div>
+                <br>
+                <br>
+                Agora veja como seria, clicando no botão abaixo:<br>
+                <br>
+                Exibe o nome do curso na posição [0], e a carga na posição[0]:<br>
+                <button type="submit" onclick="exibir0()"> Exibir </button>
+                <br>
+                <br>
+                Exibir nome do curso na posição [2], dá espaço, e a sala na posição [2]:<br>
+                <button type="submit" onclick="exibir2()"> Exibir </button>
+                <br>
+            </h2>
+            <br>
+        </div>
+        <br>
+    </main>
+</body>
+</html>

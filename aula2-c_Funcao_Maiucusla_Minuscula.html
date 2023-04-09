@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maiúscula e minúscula</title>
+    <!--CSS-->
+    <link href="style.css" rel="stylesheet">
+    <!---JS-->
+    <script>
+        //toUpperCase = deixa todas as letras maiúsculas. 
+        //toLowerCase = deixa todas as letras minúsculas.
+        
+        //variavel
+        var palavra = "INformáTiCa";
+
+        function exibirMaiuscula(){
+            
+            //exibir com letra maiúscula
+            alert(palavra.toUpperCase());
+        }
+
+        function exibirMinuscula(){
+        
+            //exibir com letra minúscula
+            alert(palavra.toLowerCase());
+        }
+
+    </script>
+</head>
+<body>
+    <div class="menu-container">
+        <nav class="menu">
+            <h2 class="title">Menu</h2>
+            <ul>
+                <br>
+                <li><a href="aula1-O_Laco_Para.html">Laço de Repetição PARA " FOR "</a></li>
+                <br>
+                <li><a href="aula1-P_Vetores_.html"> Vetor "banco de dados"</a></li>
+                <br>
+                <li><a href="aula1-Q_Vetor_de_Objetos.html"> Vetor de objetos</a></li>
+                <br>
+                <li><a href="aula2-b_Funcao_Contar_Caracteres.html"> Funções/ Contar caracteres</a></li>
+                <br>
+                <li><a href="aula2-c_Funcao_Maiucusla_Minuscula.html"> Funções/ Maiúscula e Minúscula</a></li>
+                <br>
+                <li><a href="aula2-d_Funcao_Localizar_Elementos.html"> Funções/ Localizar elementos</a></li>
+                <br>
+            </ul>
+        </nav>
+        <div class="contato">
+            contato: <br>
+            <a href="https://github.com/giovanep4mg">github</a> <br>
+            <br>
+            <a href="https://www.facebook.com/giovani.martins3/">facebook</a><br>
+            <br>
+            <a href="https://www.linkedin.com/in/giovani-teodoro-martins-4a27a4252/">Linkedin</a>
+            <br>
+        </div>
+        <div class="copyright">
+            <br>
+            &copy;Giovani Teodoro Martins
+            <br>
+        </div>
+        <div class="imagem">
+            <img src="./imagens/nego1.jpg" alt="foto do criado do site" >
+        </div>
+        <div class="imagem">
+            <img src="./imagens/nego1.jpg" alt="foto do criado do site" >
+        </div>
+    </div>
+    <main class="todaPagina">
+        <div class="title"><h1>Maiúscula e minúscula</h1></div>
+        <div class="description">
+            <h2>
+                Deixa as letras do texto Maiúscula ou Minúscula. <br>
+                <br>
+                <b>toUpperCase</b> = deixa todas as letras maiúsculas. <br> 
+                <br>
+                <b>toLowerCase </b>= deixa todas as letras minúsculas. <br>
+                <br>
+                Usado como um filtro, para deixar tudo de um jeito só,<br>
+                exemplo o usuário digita o email ou senha com uma letra maiúscula,<br>
+                daria erro, por isso se usa esse filtro para ajudar a não dá esse erro.<br>
+                <br>
+            </h2>
+        </div>
+        <br>
+        <div
+        class="exemplo">
+            <h2>
+                <b>Exemplo de código:</b><br>
+                <br>
+                Abre a tag "script", dentro dela coloque : <br>
+                <br>
+                //variável <br>
+                <b>var palavra = "INformáTiCa";</b> <br>
+                <br>
+                <br>
+                //exibir com letra maiúscula <br>
+                <b>alert(palavra.toUpperCase());</b> <br>
+                <br>
+                <br>
+                //exibir com letra minúscula <br>
+                <b>alert(palavra.toLowerCase());</b> <br>
+                <br>
+                Feche a tag "/script"  <br>
+                <br>
+                Veja como é o código:<br>
+                <div class="imagem">
+                    <img src="./imagens/funcao-maiuscula-minuscula.png" alt="print do código">
+                </div>
+                <br>
+                <br>
+                Agora veja como seria, clicando no botão abaixo:<br>
+                <br>
+                Exibir <b>Maiúscula</b>: <br>
+                <button type="submit" onclick="exibirMaiuscula()"> Exibir </button>
+                <br>
+                <br>
+                Exibir <b>Minúscula</b>: <br>
+                <button type="submit" onclick="exibirMinuscula()"> Exibir </button>
+                <br>
+                <br>
+                <br>
+            </h2>
+        </div>
+    </main>
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Seletor CLASSE</title>
+  <!--CSS-->
+  <link href="style.css" rel="stylesheet">
+  <!-----JS--->
+  <script>
+    //Selecionar atráves de CLASSE.
+    
+          //função
+          function exibirTexto(){
+             
+              //armazenar a tag com a "classe texto", que está na posição "2"
+              var campo = document.getElementsByClassName("texto")[2];
+              
+              //exibir o conteúdo
+              alert(campo.innerHTML);
+              
+          }
+  </script>
+</head>
+<body>
+  <div class="menu-container">
+        <nav class="menu">
+            <h2 class="title">Menu</h2>
+            <ul>
+                <br>
+                <li><a href="aula3-c_Evento_Alteracao.html"> Eventos/ Alteração</a></li>
+                <br>
+                <li><a href="aula3-d_Evento_Carregamento.html"> Eventos/ Carregamento</a></li>
+                <br>
+                <li><a href="aula3-e_Evento_d_Teclar.html"> Evento/ teclar</a></li>
+                <br>
+                <li><a href="aula4-a_Seletor.html"> Seletor de HTML</a></li>
+                <br>
+                <li><a href="aula4-b_Seletores_classe.html"> Seletor de CLASSE</a></li>
+                <br>
+                <li><a href="aula4-c_Seletor_Id.html"> Seletor de ID</a></li>
+                <br>
+            </ul>
+        </nav>
+        <div class="contato">
+          contato: <br>
+          <a href="https://github.com/giovanep4mg">github</a> <br>
+          <br>
+          <a href="https://www.facebook.com/giovani.martins3/">facebook</a><br>
+          <br>
+          <a href="https://www.linkedin.com/in/giovani-teodoro-martins-4a27a4252/">Linkedin</a>
+          <br>
+      </div>
+      <div class="copyright">
+          <br>
+          &copy;Giovani Teodoro Martins
+          <br>
+      </div>
+      <div class="imagem">
+          <img src="./imagens/nego1.jpg" alt="foto do criado do site" >
+      </div>
+  </div>  
+  <main class="todaPagina">
+    <div class="title"><h2>Seletor através da CLASSE</h2></div>
+      <div class="description">
+        <h2>
+          Para selecionar atráves da <b> Classe </b> de alguma tag, precisa:<br>
+          <br>
+          Criar uma variável para guarda essa informação:<br>
+          <b>var campo = </b> *que vai receber :<br>
+          <br>
+          Diz que o que vai receber é um documento:<br>
+          <b>document. </b> *ai você especifica o que você quer:<br>
+          <br>
+          Diz para pegar o elemento, que é uma "class" e vai passar o nome dessa "classe":<br> 
+          <b>getElementsByClassName()</b> *ai dentro do parentes coloque o nome da tag:<br>
+          <br>
+          Diz qual é o nome da "classe" e qual é sua posição:<br>
+          <b> ("texto") [2] ;</b> a classe = "texto", na posição "2"  <br>
+          <br>
+          Ficando assim o comando para pegar algo de um HTML :<br>
+          <b>var campo = document.getElementsByClassName("texto")[2];</b> <br>
+          <br>
+        </h2>
+      </div>
+      <div class="exemplo">
+          <h2>
+            Vamos começar criando 3 tipos de tags diferentes,<br>
+            e adicionar uma "classe" em cada uma das tags,<br>
+            a "classe" servi para estilizar "CSS" ou manipular através do "JS" :<br>
+            <br>
+            <b>h1 classe = "texto" </b> Titulo em h1 <b>/h1</b> <br> 
+            <b>h2 classe = "texto" </b> Titulo em h <b>/h2</b> <br> 
+            <b>p classe = "texto" </b> Paragráfo <b>/p</b> <br>
+            <br>
+            <br>
+            Para  selecionar, vamos criar um botão e colocar uma função/açao:<br> 
+            <br>
+            <b>button onclick="exibirTexto()"</b> "Clique aqui" <b>/button</b> <br>
+            <br>
+            Veja como é o código:<br>
+            <div class="imagem">
+              <img src="./imagens/seletor-classe-1.png" alt="print do código">
+            </div>
+            <br>
+            <br>
+            Agora vamos criar a função, para exibir o texto :<br>
+            <br>
+            Na tag "script", coloque :<br>
+            <br>
+            _<b>function exibirTexto() { </b>  dentro dela coloque:<br>
+            <br>
+            __// armazenar a tag com a "classe texto", que está na posição "2" <br>
+            __<b>var campo = document.getElementsByClassName("texto")[2];</b> <br>
+            <br>
+            __// Para exibir o html => use o "innerHTML" <br>
+            __<b>alert(campo.innerHTML);</b> <br>
+            <br>
+            _<b>}</b> fecha a "function" <br>
+            <br>
+            Veja como é o código:<br>
+            <div class="imagem">
+              <img src="./imagens/seletor-classe-2.png" alt="print do código">
+            </div>
+            <br>
+            <br>
+            Apesar das classes terem o mesmo nome, a posição selecionada é "2",<br>
+            lembrando que conta: "0, 1, 2".<br>
+            <br>
+            Agora vamos ver se está funcionando na prática,<br>
+            ao clicar no botão "Clique aqui", tem que aparecer o "Paragráfo",<br>
+            <br>
+            <br>
+            
+            <!---botao para acionar a função => exibirTexto()-->
+            <button onclick="exibirTexto()"> Clique aqui </button> 
+            
+              <h1 class="texto"> Titulo em h1</h1> 
+              <h2 class="texto"> Titulo em h2</h2> 
+              <p class="texto"> Paragráfo</p> <br> 
+            
+            <br>
+            <br>
+          </h2>
+          <br>
+        </div>
+      <br>
+  </main>
+</body>
+</html>

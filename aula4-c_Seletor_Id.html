@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Selecionar pelo Id</title>
+  <!--CSS-->
+  <link href="style.css" rel="stylesheet">
+  <!----JS---->
+  <script>
+    //Vai copiar o dado digitado no campo de texto na página e exibir na "janelinha"
+    //Depois apaga o campo de texto, da página deixando em branco.
+    // Não precisa colocar qual é a tag, somente o "id"
+
+
+        //Funçao
+        function exibirConteudo(){
+
+            //obter dados do "id campo", no id NÃO precisa passar a posição "[?]"
+            var campo = document.getElementById("campo");
+
+            //exibir o conteúdo => como é tag é "input" usa => "value" e não o innerHTML 
+            alert(campo.value);
+
+            // vai deixar vazio o "campo", está enviando para o "campo"
+            campo.value = "" ;
+
+        }
+
+  </script>
+</head>
+<body>
+  <div class="menu-container">
+    <nav class="menu">
+        <h2 class="title">Menu</h2>
+        <ul>
+            <br>
+            <li><a href="aula3-d_Evento_Carregamento.html"> Eventos/ Carregamento</a></li>
+            <br>
+            <li><a href="aula3-e_Evento_d_Teclar.html"> Evento/ teclar</a></li>
+            <br>
+            <li><a href="aula4-a_Seletor.html"> Seletor de HTML</a></li>
+            <br>
+            <li><a href="aula4-b_Seletores_classe.html"> Seletor de CLASSE</a></li>
+            <br>
+            <li><a href="aula4-c_Seletor_Id.html"> Seletor de ID</a></li>
+            <br>
+            <li><a href="aula4-d_Manipular_o_CSS.html"> Manipular o CSS</a></li>
+            <br>
+        </ul>
+    </nav>
+    <div class="contato">
+      contato: <br>
+      <a href="https://github.com/giovanep4mg">github</a> <br>
+      <br>
+      <a href="https://www.facebook.com/giovani.martins3/">facebook</a><br>
+      <br>
+      <a href="https://www.linkedin.com/in/giovani-teodoro-martins-4a27a4252/">Linkedin</a>
+      <br>
+  </div>
+  <div class="copyright">
+      <br>
+      &copy;Giovani Teodoro Martins
+      <br>
+  </div>
+  <div class="imagem">
+      <img src="./imagens/nego1.jpg" alt="foto do criado do site" >
+  </div>
+  </div> 
+  <main class="todaPagina">
+    <div class="title"><h1>Seletor através de Classe</h1></div>
+    <div class="description">
+      <h2>
+        Vai copiar o dado digitado no campo de texto na página e exibir na "janelinha".<br>
+        <br>
+        Depois apaga o campo de texto, da página deixando em branco.<br>
+        <br>
+        Não precisa colocar qual é a tag, somente o "id" <br>
+        <br>
+        Quando for uma tag de formulário, para exibir usa o => *variável.<b>value</b> <br>
+      </h2>
+    </div>
+    <br>
+    <div class="exemplo">
+      <h2>
+        <br>
+        Vamos começar criando um  "input" para o usuário digitar,<br>
+        dentro desse input terá o "type = text" e seu "id = campo":<br>
+        <br>
+        <b>input type="text" id="entrada"</b> <br>
+        <br>
+        Depois vamos criar um "button", e ele terá um evento "onclick",<br>
+        que executar uma "Função" que vai exibir o conteúdo digitado:<br>
+        <br>
+        <b>button onclick="exibirConteudo()"</b> "Clique aqui" <b>/button</b> <br>
+        <br>
+        Veja como é o código:<br>
+        <div class="imagem">
+          <img src="./imagens/seletor-id-1.png" alt="print do código">
+        </div>
+        <br>
+        <br>
+        Agora vamos criar a "função" => "exibirConteudo()", na tag <b>script</b>. <br>
+        <br>
+        <b>Exemplo de código:</b><br>
+        <br>
+        Abra a tag "script", dentro dela coloque:<br>
+        <br>
+        ___//funçao.<br>
+        ___<b>function exibirConteudo () { </b>  <br>
+        <br>
+        <br>
+        ________//obter dados do "id campo", no id NÃO precisa passar a posição "[?]"<br>
+        ________<b>var campo = document.getElementById("campo");</b><br>
+        <br>
+        <br>
+        ______//exibir o conteúdo => como é tag é "input" usa => "value" e não o innerHTML <br>
+        ______<b>alert(campo.value);</b><br>
+        <br>
+        <br>
+        _______// vai deixar vazio o "campo", está enviando para o "campo"  <br>
+        _______<b>campo.value = "" ;</b><br>
+        <br>
+        __<b> } </b> fecha a "function" <br>
+        <br>
+        Veja como é o código:<br>
+        <div class="imagem">
+          <img src="./imagens/seletor-id-2.png" alt="print do código">
+        </div>
+        <br>
+        <br>
+        <br>
+        Teste prático, para vê se está ou não funcionando,<br>
+        digite qualquer coisa no campo de texto abaixo,<br>
+        ao clicar no botão "Clique aqui" tem que ser mostrado o você digitou.<br>
+        <br>
+        <div>
+          <!--cria uma janela de campo, para adicionar texto, seu id é "campo"-->
+          <input type="text" id="campo">
+          <br>
+          <!--cria um botão que vai iniciar a função => "exibirConteudo()"-->
+          <button onclick="exibirConteudo()">Clique aqui</button>
+          <br>
+          <br>
+        </div>
+      </h2>
+      <br>
+    </div>
+    <br>
+  </main>
+</body>
+</html>

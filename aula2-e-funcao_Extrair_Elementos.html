@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Extrair Elementos</title>
+    <!--CSS-->
+    <link href="style.css" rel="stylesheet">
+    <!----JS-->
+    <script>
+            /*  Para corta pedaços de texto, partes que não serão exibidas.        
+                slice = vai corta os caracteres, de acordo com o parâmetros "()".
+            */
+
+            //variável
+            var frase = "Aprendendo JavaScript";
+
+            function extrair10(){
+            
+                // vai extrair da frase os primeiros "10 caracteres",
+                // que será o => "JavaScript"
+                alert(frase.slice(10));
+            }
+
+            function extrair1015(){
+            
+                // vai extrair os primeiros "10" caracteres, depois
+                // extrair os que estão depois de "15" caracteres.
+                alert(frase.slice(10, 15));
+            }
+
+    </script>
+</head>
+<body>
+    <div class="menu-container">
+        <nav class="menu">
+            <h2 class="title">Menu</h2>
+            <ul>
+                <br>
+                <li><a href="aula1-Q_Vetor_de_Objetos.html"> Vetor de objetos</a></li>
+                <br>
+                <li><a href="aula2-b_Funcao_Contar_Caracteres.html"> Funções/ Contar caracteres</a></li>
+                <br>
+                <li><a href="aula2-c_Funcao_Maiucusla_Minuscula.html"> Funções/ Maiúscula e Minúscula</a></li>
+                <br>
+                <li><a href="aula2-d_Funcao_Localizar_Elementos.html"> Funções/ Localizar elementos</a></li>
+                <br>
+                <li><a href="aula2-e-funcao_Extrair_Elementos.html"> Funções/ Extrair Elementos</a></li>
+                <br>
+                <li><a href="aula2-f-funcao_Arredondar _valores.html"> Funções/ Arredondar valores</a></li>
+                <br>
+            </ul>
+        </nav>
+        <div class="contato">
+            contato: <br>
+            <a href="https://github.com/giovanep4mg">github</a> <br>
+            <br>
+            <a href="https://www.facebook.com/giovani.martins3/">facebook</a><br>
+            <br>
+            <a href="https://www.linkedin.com/in/giovani-teodoro-martins-4a27a4252/">Linkedin</a>
+            <br>
+        </div>
+        <div class="copyright">
+            <br>
+            &copy;Giovani Teodoro Martins
+            <br>
+        </div>
+        <div class="imagem">
+            <img src="./imagens/nego1.jpg" alt="foto do criado do site" >
+        </div>
+    </div>
+    <main class="todaPagina">
+        <div class="title"><h1>Extrair Elementos</h1></div>
+        <div class="description">
+            <h2>
+                <b>Extrair elementos</b> podem ser:<br>
+                caracteres, simbolos, números, espaços, etc...<br>
+                Para corta pedaços de texto. <br>
+                <br>
+                <b>slice</b> = vai corta os caracteres passado pelo usuário "( )". <br>
+                dentro do "()", você passa quantos caracteres você quer corta do texto.<br> 
+                <br>
+                No primeiro exemplo, usamos o texto => "Aprendendo JavaScript", <br>
+                vamos passar o parâmetro <b>(10)</b>, vai corta os 10 primeiros caracteres.<br>
+                Então terá que aparecer na tela = <b>JavaScript</b> .<br>
+                <br> 
+                No segundo exemplo, usamos o mesmo texto => "Aprendendo JavaScript", <br>
+                vamos passar o parâmetro <b>(10, 15 )</b>,<br>
+                <b>vai corta os 10 primeiros caracteres</b> => "Aprendendo".<br>
+                <b>depois de 15 caracteres será cortado denovo </b> => "Script" <br>
+                <br>
+                Então será exibido, somente o que estiver depois do "10" antes do "15",<br>
+                a parte que eu quero é depois de 10 caracteres e antes de 15 caracteres.<br>
+                <br>
+                <b>Aviso: o espaço também conta como caractere !!</b><br>
+                <br> 
+            </h2>
+        </div>
+        <br>
+        <div class="exemplo">
+            <h2>
+                <b>Exemplo de código:</b><br>
+                <br>
+                Abra a tag "script", dentro dela coloque: <br>
+                <br>
+                //variavel <br>
+                <b>var frase = "Aprendendo JavaScript";</b> <br>
+                <br>
+                <br>
+                // vai extrair da frase os primeiros "10 caracteres", <br>
+                // que será o => "JavaScript" <br>
+                <b>alert(frase.slice(10));</b> <br>
+                <br>
+                // vai extrair os primeiros "10" caracteres, depois <br>
+                // extrair os que estão depois de "15" caracteres. <br>
+                <b>alert(frase.slice(10, 15));</b> <br>
+                <br>
+                Fecha a tag "/script" <br>
+                <br>
+                Veja como é o código:<br>
+                <div class="imagem">
+                    <img src="./imagens/funcao-extrair-caracteres.png" alt="print do código">
+                </div>
+                <br>
+                <br>
+                Agora veja como seria, clicando no botão abaixo: <br>
+                <br>
+                Exibir <b>depois de 10 caracteres</b>: <br>
+                <button type="submit" onclick="extrair10()"> Exibir </button>
+                <br>
+                <br>
+                Exibir <b>depois de 10 caracteres, e antes de 15 caracteres</b>: <br>
+                <button type="submit" onclick="extrair1015()"> Exibir </button>
+                <br>
+                <br>
+                <br>
+            </h2>
+        </div>
+    </main>
+</body>
+</html>

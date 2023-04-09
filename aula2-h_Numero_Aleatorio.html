@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Número Aleatório "randon"</title>
+    <!--CSS-->
+    <link href="style.css" rel="stylesheet">
+    <!----------JS------>
+    <script>
+        //Usado para gerar números aleatórios, com e sem decimais !
+
+        function aleatorioDecimais(){
+         
+            //exibir número aleatório, vai escolher um número aleatório de 1 a 10 com decimais  .
+            alert(Math.random() * 10 );
+        }
+
+               
+            // gera 1 número aleatório e salva na variável "numero" 
+            var numero = Math.random() * 10 ;
+        
+            function aleatorioInteiros(){
+            
+                // pega os valores da variável "numero",
+                // *round => converte em número inteiro e exibi na tela
+                alert(Math.round(numero) );
+            }
+</script>
+</head>
+<body>
+    <div class="menu-container">
+        <nav class="menu">
+            <h2 class="title">Menu</h2>
+            <ul>
+                <br>
+                <li><a href="aula2-d_Funcao_Localizar_Elementos.html"> Funções/ Localizar elementos</a></li>
+                <br>
+                <li><a href="aula2-e-funcao_Extrair_Elementos.html"> Funções/ Extrair Elementos</a></li>
+                <br>
+                <li><a href="aula2-f-funcao_Arredondar _valores.html"> Funções/ Arredondar valores</a></li>
+                <br>
+                <li><a href="aula2-g_funcao_Maximo_Minimo.html"> Funções/ Máximo e Mínimo</a></li>
+                <br>
+                <li><a href="aula2-h_Numero_Aleatorio.html"> Funções/ Números aleatórios</a></li>
+                <br>
+                <li><a href="aula2-i_Novas_Funcoes.html"> Novas Funções</a></li>
+                <br>
+            </ul>
+        </nav>
+        <div class="contato">
+            contato: <br>
+            <a href="https://github.com/giovanep4mg">github</a> <br>
+            <br>
+            <a href="https://www.facebook.com/giovani.martins3/">facebook</a><br>
+            <br>
+            <a href="https://www.linkedin.com/in/giovani-teodoro-martins-4a27a4252/">Linkedin</a>
+            <br>
+        </div>
+        <div class="copyright">
+            <br>
+            &copy;Giovani Teodoro Martins
+            <br>
+        </div>
+        <div class="imagem">
+            <img src="./imagens/nego1.jpg" alt="foto do criado do site" >
+        </div>
+    </div>
+    <main class="todaPagina">
+        <div class="title"><h1>Números Aleatórios "random"</h1></div>
+        <div class="description">
+            <h2>
+                <b>Math.random</b>
+                Usado para gerar números aleatórios.<br>
+                <br>
+                Mas gera números aleatórios decimais.<br>
+                <b>Math.random() * 10 </b> => vai gerar 1 número aleatório com decimais.<br>
+                O  " * 10 " quer dizer que ele vai gerar algum número de 1 a 10 .<br>
+                <br>
+                Para vermos isso, vamos colocar dentro do "alert":<br>
+                <b>alert(Math.random() * 10 );</b> <br>
+                <br>
+                <br>
+                <b>Como:  Criar número aleatório inteiro, sem ser decimais ?</b> <br>
+                <br>
+                Crie uma variável, dentro dessa variável será salvo o número aleatório criado,<br>
+                <br>
+                <b>var numero = Math.random() * 10 ;</b> <br>
+                <br>
+                Para fazer a conversão de decimais para números inteiros, use:<br>
+                <br>
+                <b>Math.round(numero)</b> * round vai arredondar esse número.<br>
+                <br>
+                Para ser exibido na tela, coloque dentro do "alert":<br>
+                <br>
+                <b>alert(Math.round(numero));</b>
+                <br>
+                Agora será exibido 1 número aleatório inteiro, sem decimais.<br>
+                <br>
+            </h2>    
+        </div>
+        <div class="exemplo">
+            <h2>
+                <span>Exemplo de código:</span><br>
+                <br>
+                Abra a tag "script" <br>
+                <br>
+                //exibir número aleatório, com decimais <br>
+                // vai escolher um número aleatório de 1 a 10 com decimais.<br>
+                <b>alert(Math.random() * 10 );</b><br>
+                <br>
+                <br>
+                _______//exibir número aleatório, sem decimais<br>
+                //gerar número aleatório, e salva na variável "numero" <br> 
+                <br>
+                <b>var numero = Math.random() * 10 ;</b> <br> 
+                <br>
+                <br>
+                //pega o "numero" que está com decimais, e arredonda ele , para ser um inteiro.<br>
+                <b>alert(Math.round(numero));</b><br>
+                <br>
+                Fecha a tag "/script" <br>
+                <br>
+                Veja como é o código:<br>
+                <div class="imagem">
+                    <img src="./imagens/funcao-numero-aleatorio.png" alt="print do código">
+                </div>
+                <br>
+                <br>
+                Agora veja como seria, clicando no botão abaixo: <br>
+                <br>
+                Exibir <b>Números aleatórios com decimais </b>: <br>
+                <button type="submit" onclick="aleatorioDecimais()"> Exibir </button>
+                <br>
+                <br>
+                Exibir <b>Números aleatórios sem decimais, inteiros </b> : <br>
+                <button type="submit" onclick="aleatorioInteiros()"> Exibir </button>
+                <br>
+                <br>
+                <br>
+                <br>
+            </h2>
+        </div>
+    </main>
+</body>
+</html>

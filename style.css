@@ -1,0 +1,110 @@
+*{
+    background-color: rgba(207, 204, 240, 0.144);
+     /* defini se a borda será dentro ou fora do elemento */
+     box-sizing: border-box;
+     /* margem da página, se não colocar zero "0", vai ter alguma margem */
+     margin: 0px;
+     padding: 0px;
+     
+}
+.todaPagina{
+    background-color: rgba(0, 255, 255, 0.123);
+    /* espaço entre o conteúdo e a borda, lado direito*/
+    padding-left: 20%;
+    /* espaço entre o conteúdo e a borda, lado esquerdo*/
+    padding-right: 10%;
+    /* alinhamento vertical, do texto */
+    vertical-align: top;
+    
+
+}
+.menu-container{
+    border: 3px solid black;
+    background-color: rgba(243, 67, 14, 0.151);
+    width: 20%;
+    padding: 10px;
+    vertical-align: top;
+    text-align: center;
+    position: fixed;
+    height: 100%;
+    
+}
+
+.menu-container img {
+    width: 30%;
+    height: 30%;   
+}
+.menu-container img:hover {
+    width: 70%;
+    height: 70%; 
+    border: #1ed40e;  
+    border-radius: 20%;
+}
+.menu a{
+    padding: 10px;
+    margin: 10px;
+    font-family: cursive;
+    font-size: 15px;
+}
+.menu a:hover{
+    color: #1ed40e;
+    
+    font-size: 18px;
+
+}
+.menu a:active{
+    border: 2px solid black;
+    border-radius: 10%;
+} 
+
+
+
+.title {
+   text-align: center;
+    font-style: italic;
+    font-size: 20px;
+    color: blue;
+    padding-top: 20px;
+}
+
+.description{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    margin: 35px;
+    padding-left: 10px;
+}
+
+b{
+    color: red;
+}
+
+.navegacao {
+    margin: 0px;
+}
+
+.contato{
+    font-size: 25px ;
+}
+
+button{
+    font-size: medium;
+    color: #1ed40e;
+    
+}
+button:hover{
+    font-size: large;
+    background-color: white;
+    width: 20%;
+    height: 20%;
+}
+
+.exemplo{
+    border: 3px solid black;
+    padding: 10px;
+    margin: 10px;
+    
+}
+.imagem{
+    contain: content;
+}
+

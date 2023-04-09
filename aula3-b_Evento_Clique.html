@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evento clique</title>
+    <!--CSS-->
+    <link href="style.css" rel="stylesheet">
+    <!-----JS---->
+    <script>
+        //
+
+        //criar a função mensagem,quando clicar vai chamar essa funçao.
+        function mensagem (){
+            
+            //exibirá essa mensagem,quando clicar no botão.
+            alert("Você clicou no botão!");
+        }
+
+</script>
+</head>
+<body>
+    <div class="menu-container">
+        <nav class="menu">
+            <h2 class="title">Menu</h2>
+            <ul>
+                <br>
+                <li><a href="aula2-f-funcao_Arredondar _valores.html"> Funções/ Arredondar valores</a></li>
+                <br>
+                <li><a href="aula2-g_funcao_Maximo_Minimo.html"> Funções/ Máximo e Mínimo</a></li>
+                <br>
+                <li><a href="aula2-h_Numero_Aleatorio.html"> Funções/ Números aleatórios</a></li>
+                <br>
+                <li><a href="aula2-i_Novas_Funcoes.html"> Novas Funções</a></li>
+                <br>
+                <li><a href="aula3-b_Evento_Clique.html"> Eventos de Clique</a></li>
+                <br>
+                <li><a href="aula3-c_Evento_Alteracao.html"> Eventos/ Alteração</a></li>
+            </ul>
+        </nav>
+        <div class="contato">
+            contato: <br>
+            <a href="https://github.com/giovanep4mg">github</a> <br>
+            <br>
+            <a href="https://www.facebook.com/giovani.martins3/">facebook</a><br>
+            <br>
+            <a href="https://www.linkedin.com/in/giovani-teodoro-martins-4a27a4252/">Linkedin</a>
+            <br>
+        </div>
+        <div class="copyright">
+            <br>
+            &copy;Giovani Teodoro Martins
+            <br>
+        </div>
+        <div class="imagem">
+            <img src="./imagens/nego1.jpg" alt="foto do criado do site" >
+        </div>
+    </div>
+    <main class="todaPagina">
+        <div class="title"><h1>Evento clique</h1></div>
+        <div class="description">
+            <h2>
+                Eventos servem, para executar ações, executar funções .<br>
+                <br>
+                Aqui falaremos sobre, <b>evento de clique</b>.<br>
+                <br>
+                Vamos para a prática:<br>
+            </h2>
+        </div>
+        <div class="exemplo">
+            <h2>
+                No html, depois do "body", só para servir de exemplo,<br>
+                crie uma tag <b>button</b> , que quando for clicado executará uma ação<br>
+                <br>
+                Para ser executado, você tem que colocar uma ação dentro da tag ,<br>
+                Escolha a opção <b>onclick</b>, que seria "ao clicar" terá uma ação que,<br>
+                vai ativar a função "mensagem()", que será criada depois.<br>
+                <br>
+                <b>button onclick="mensagem()"> </b> "clique aqui", feche o <b>/button</b> <br>
+                <br>
+                Veja como é o código:<br>
+                <div class="imagem">
+                    <img src="./imagens/evento-clique-botao.png" alt="print do código">
+                </div>
+                <br>
+                <br>
+                Agora vamos criar a função que será executada ao clicar no botão.<br>
+                <br>
+                dentro da tag "script", adicione a "function" => função: <br>
+                <b>function mensagem ( ) { </b> , dentro dela coloque um "alert", para mostrar na tela. <br>
+                ____<b>alert( " Você clicou no botão! " );</b> <br>
+                <b>}</b>  feche a "function"<br>
+                <br>
+                Veja como é o código:<br>
+                <div class="imagem">
+                    <img src="./imagens/evento-clique-funcao.png" alt="print do código">
+                </div>
+                <br>
+                <br>
+                Veja na prática funcionando o botão que criamos:<br>
+                <br>
+                <button onclick="mensagem()">clique aqui</button>
+                <br>
+                <br>
+            </h2>
+            <br>
+        </div>
+        <br>
+    </main>
+</body>
+</html>

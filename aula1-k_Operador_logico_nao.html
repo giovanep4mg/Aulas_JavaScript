@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operador lógico Não "!"</title>
+    <!--CSS-->
+    <link href="style.css" rel="stylesheet">
+    <script>
+        //operador logico não, normalmente usado quando é booleano, ou seja sim ou não (true ou false)
+        // Ele negativa, troca o seu valor booleano
+        // no caso abaixo, " trabalho é true" mas ele troca para "trabalho é false"
+
+        //variável
+        var trabalho = true
+        
+            function operadorNao(){
+        
+                //se (trabalho falso é verdadeiro)
+                if(!trabalho == true){
+                    //exibe essa mensagem
+                    alert("Você trabalha!");
+            
+                //senão    
+                } else {
+                    //exibe essa mensagem
+                    alert("Você não trabalha")
+                }
+            }    
+    </script>
+</head>
+<body>
+    <div class="menu-container">
+        <nav class="menu">
+            <h2 class="title">Menu</h2>
+            <ul>
+                <br>
+                <li><a href="aula1-g_Condicional_Simples.html"> Condicional Simples </a></li>
+                <br>
+                <li><a href="aula1-h_Condicional_Alinhada.html"> Condicional Aninhada </a></li>
+                <br>
+                <li><a href="aula1-I_OperadorLogico_E_&&.html">Operador Lógico E "&&" </a></li>
+                <br>
+                <li><a href="aula1-J_OperadorLogico_OU.html">Operador Lógico OU "||" </a></li>
+                <br>
+                <li><a href="aula1-k_Operador_logico_nao.html">Operador Lógico Não " ! "</a></li>
+                <br>
+                <br>
+                <li><a href="aula1-l_Estrutura_de_Escolha.html">Estrutura de escolha "switch"</a></li>
+                <br>
+            </ul>
+        </nav>
+        <div class="contato">
+            contato: <br>
+            <a href="https://github.com/giovanep4mg">github</a> <br>
+            <br>
+            <a href="https://www.facebook.com/giovani.martins3/">facebook</a><br>
+            <br>
+            <a href="https://www.linkedin.com/in/giovani-teodoro-martins-4a27a4252/">Linkedin</a>
+            <br>
+        </div>
+        <div class="copyright">
+            <br>
+            &copy;Giovani Teodoro Martins
+            <br>
+        </div>
+        <div class="imagem">
+            <img src="./imagens/nego1.jpg" alt="foto do criado do site" >
+        </div>
+    </div>
+    <main class="todaPagina">
+        <div class="title"><h1>Operador lógico Não "!"</h1></div>
+        <div class="description">
+            <h2>
+            Usado em condicionais,quando é booleano.<br>
+            Ele modifica, troca o valor, negativa, o que era false vira true, e true vira false.<br>
+            <br>
+            No exemplo:<br>
+            Coloca a variável "trabalho" como booleano "true" verdadeiro,<br>
+            mas quando colocamos o sinal  <b>!</b>  ele muda para :<br>
+            <b>trabalho = false</b>, trabalho passa a ser falso.<br>
+            </h2>
+        </div>
+        <br>
+        <div class="exemplo">
+            <h2>
+                <b>Exemplo de código:</b><br>
+                Abra a tag "script"  <br>
+                <br>
+                //variável <br>
+                <b>var trabalho = true;</b> está como verdadeiro.<br> 
+                <br>
+                <br>
+                //se (trabalho é igual verdadeiro) <br>
+                <b>if (!trabalho == true){</b> <br>
+               <b>_______alert("Trabalho!");</b> <br>
+                <b>}else{</b> <br>
+                <b>_______alert("Não trabalho!");</b><br>
+                <b>}</b> <br>
+                <br>
+                Fecha a tag "/script"<br>
+                <br>
+                Veja como é o código:<br>
+                <div class="imagem">
+                    <img src="./imagens/operador-logico-NAO.png" alt="print do código">
+                </div>
+                <br>
+                <br>
+                Agora veja como seria, clicando no botão abaixo:<br>
+                <button type="submit" onclick="operadorNao()"> Verificar </button>
+                <br>
+            </h2>
+            <br>
+        </div>
+        <br>
+    </main>
+    <br>
+</body>
+</html>

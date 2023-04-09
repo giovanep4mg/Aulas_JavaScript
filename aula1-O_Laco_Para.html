@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laço de Repetição Para "for"</title>
+    <!--CSS-->
+    <link href="style.css" rel="stylesheet">
+    <!---JS-->
+    <script>
+    /*
+        Possui três parametros:
+        "var indice" = INICIO
+        "indice <= 5" = FINAL
+        "indice++" = QUANTO VOCÊ QUER ADICIONAR A MAIS 
+    */
+    
+    function lacoFor(){
+        
+        //laço de repetição
+        for(var indice = 1; indice <= 5; indice++){
+            alert("O indice vale:"+indice);
+        }
+    }
+
+    </script>
+</head>
+<body>
+    <div class="menu-container">
+        <nav class="menu">
+            <h2 class="title">Menu</h2>
+            <ul>
+                <br>
+                <li><a href="aula1-k_Operador_logico_nao.html">Operador Lógico Não " ! "</a></li>
+                <br>
+                <li><a href="aula1-l_Estrutura_de_Escolha.html">Estrutura de escolha "switch"</a></li>
+                <br>
+                <li><a href="aula1-M_Lacos_de_Repeticao_Enquanto.html">Laço de Repetição Enquanto "WHILE"</a></li>
+                <br>
+                <li><a href="aula1-N_laco_de_Repeticao_Faca_Enquanto.html">Laço de Repetição faça/enquanto "DO / WHILE"</a></li>
+                <br>
+                <li><a href="aula1-O_Laco_Para.html">Laço de Repetição PARA " FOR "</a></li>
+                <br>
+                <li><a href="aula1-P_Vetores_.html"> Vetor "banco de dados"</a></li>
+                <br>
+            </ul>
+        </nav>
+        <div class="contato">
+            contato: <br>
+            <a href="https://github.com/giovanep4mg">github</a> <br>
+            <br>
+            <a href="https://www.facebook.com/giovani.martins3/">facebook</a><br>
+            <br>
+            <a href="https://www.linkedin.com/in/giovani-teodoro-martins-4a27a4252/">Linkedin</a>
+            <br>
+        </div>
+        <div class="copyright">
+            <br>
+            &copy;Giovani Teodoro Martins
+            <br>
+        </div>
+        <div class="imagem">
+            <img src="./imagens/nego1.jpg" alt="foto do criado do site" >
+        </div>
+        <div class="imagem">
+            <img src="./imagens/nego1.jpg" alt="foto do criado do site" >
+        </div>
+    </div>
+    <main class="todaPagina">
+        <div class="title"><h1>Laço de Repetição Para "for"</h1></div>
+        <div class="description">
+            <h2>
+                Você tem que colocar esses 3 parâmetros:<br>
+                <b>var indice = 1 </b> => INICIO => coloca uma variável e seu valor .<br>
+                <b>indice <= 5</b> => vai repetir até o indice ser maior ou igual a 5. <br>
+                <b>indice++</b> => acrescenta +1 ao valor da variável indice, fazendo ele parar de rodar. <br>
+                <br>
+                Para vermos melhor vamos adicionar uma caixa de mensagem, avisando quanto está valendo o "indice".<br>
+                <br>
+            </h2>
+        </div>
+        <br>
+        <div class="exemplo">
+            <h2>
+                <b>Exemplo de código:</b><br>
+                Abra a tag "script", e coloque dentro dela: <br>
+                <br>
+                //laço de repetição <br>
+                <b>for(var indice = 1; indice <= 5; indice++){</b><br>
+                <b>alert("O indice vale:"+indice);</b><br>
+                <b>}</b><br>
+                <br>
+                Feche a tag "/script"<br>
+                <br>
+                Veja como é o código:<br>
+                <div class="imagem">
+                    <img src="./imagens/laço-de-repeticao-FOR.png" alt="print do código">
+                </div>
+                <br>
+                <br>
+                Agora veja como seria, clicando no botão abaixo:<br>
+                <button type="submit" onclick="lacoFor()"> Verificar </button>
+                <br>
+            </h2>
+            <br>
+        </div>
+        <br>
+    </main>
+</body>
+</html>

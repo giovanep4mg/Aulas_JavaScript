@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laço de Repetição Enquanto "WHILE"</title>
+    <!--CSS-->
+    <link href="style.css" rel="stylesheet">
+    <!---JS-->
+    <script>
+    /*
+    Usado para uma sequência de ação, vai fazer várias vezes uma ação.
+    Importante ter um fim, para parar o loop
+    */
+
+        function lacoRepeticaoWhile(){
+           
+            //variável
+            var indice = 1 ;
+
+            //enquanto (indice for menor ou igual a 3)
+            while(indice <= 3){
+             
+            //vai exibir essa mensagem, mais o indice "o número"
+            alert("oi"+indice);
+        
+            //adiciona número a mais na variável indice, assim ele vai parar, se não fica no loop infinito. 
+            indice++;
+
+            }
+
+        }
+
+
+    </script>
+</head>
+<body>
+    <div class="menu-container">
+        <nav class="menu">
+            <h2 class="title">Menu</h2>
+            <ul>
+                <br>
+                <li><a href="aula1-I_OperadorLogico_E_&&.html">Operador Lógico E "&&" </a></li>
+                <br>
+                <li><a href="aula1-J_OperadorLogico_OU.html">Operador Lógico OU "||" </a></li>
+                <br>
+                <li><a href="aula1-k_Operador_logico_nao.html">Operador Lógico Não " ! "</a></li>
+                <br>
+                <li><a href="aula1-l_Estrutura_de_Escolha.html">Estrutura de escolha "switch"</a></li>
+                <br>
+                <li><a href="aula1-M_Lacos_de_Repeticao_Enquanto.html">Laço de Repetição Enquanto "WHILE"</a></li>
+                <br>
+                <li><a href="aula1-N_laco_de_Repeticao_Faca_Enquanto.html">Laço de Repetição faça/enquanto "DO / WHILE"</a></li>
+                <br>
+            </ul>
+        </nav>
+        <div class="contato">
+            contato: <br>
+            <a href="https://github.com/giovanep4mg">github</a> <br>
+            <br>
+            <a href="https://www.facebook.com/giovani.martins3/">facebook</a><br>
+            <br>
+            <a href="https://www.linkedin.com/in/giovani-teodoro-martins-4a27a4252/">Linkedin</a>
+            <br>
+        </div>
+        <div class="copyright">
+            <br>
+            &copy;Giovani Teodoro Martins
+            <br>
+        </div>
+        <div class="imagem">
+            <img src="./imagens/nego1.jpg" alt="foto do criado do site" >
+        </div>
+    </div>
+    <main class="todaPagina">
+        <div class="title"><h1>Laço de Repetição Enquanto "WHILE"</h1></div>
+        <div class="description">
+            <h2>
+            Para executar uma ação várias vezes.<br>
+            <b>Atenção:</b> tem que fazer a implementação, para não dá loop infinito.<br>
+            Para fazer validações, para buscar informações em um banco de dados.<br>
+            <br>
+            No exemplo:<br>
+            Executar o "oi" 3 vezes.<br>
+            </h2>
+        </div>
+        <br>
+        <div class="exemplo">
+            <h2>
+            <b>Exemplo de código:</b><br>
+            Abra a tag "script" dentro dela coloque: <br>
+            <br>
+            //variável<br>
+            <b>var indice = 1 ;</b><br>
+            <br>
+            <br>
+            // Laço de repetição<br>
+            <b>while (indice <= 3) {</b> <br>
+            <br>
+            // enquanto o indice for maior ou igual a 3, exibirá essa mensagem.<br>
+            <b>_________alert("oi"+indice);</b> <br>
+            <br>
+            <b>indice++; </b> * implementa o indice, vai aumentar o valor dele para parar o loop *<br>
+            <b>}</b><br>
+            <br>
+            Fecha a tag "/script"  <br>
+            <br>
+            Veja como é o código:<br>
+            <div class="imagem">
+                <img src="./imagens/laco-de-repeticao-enquanto-while.png" alt="print do código">
+            </div>
+            <br>
+            <br>
+            Agora veja como seria, clicando no botão abaixo:<br>
+            <button type="submit" onclick="lacoRepeticaoWhile()"> Verificar </button>
+            <br>
+            </h2>
+        </div>
+        <br>
+        <br>
+    </main>
+    <br>
+</body>
+</html>

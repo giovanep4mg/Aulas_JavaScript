@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vetores "Array"</title>
+    <!--CSS-->
+    <link href="style.css" rel="stylesheet">
+    <!----JS-->
+    <script>
+        /*
+        Vetor = são várias informações dentro de uma variável,um banco de dados temporário.
+        Para mostra um item dentro do vetor, usa o "[]", passando o numero de qual você quer.
+        A ordem dentro do vetor começa com zero "0", ou seja,"HTML" é "0", "CSS" é "1" ...
+        */
+
+
+        //variável curso, que é um vetor por que possui "[]", e possui nomes de alguns cursos.
+        var cursos = ["HTML", "CSS", "JAVASCRIPT", ];
+
+        //exibir o vetor
+
+        function exibir0(){
+        
+            //exibirá o curso "0", que é o HTML
+            alert(cursos[0])
+        }
+        
+        function exibir2(){
+    
+            //exibirá o curso "2", que é o JAVASCRIPT
+            alert(cursos[2]);
+
+        }
+
+    </script>
+</head>
+<body>
+    <div class="menu-container">
+        <nav class="menu">
+            <h2 class="title">Menu</h2>
+            <ul>
+                <br>
+                <li><a href="aula1-l_Estrutura_de_Escolha.html">Estrutura de escolha "switch"</a></li>
+                <br>
+                <li><a href="aula1-M_Lacos_de_Repeticao_Enquanto.html">Laço de Repetição Enquanto "WHILE"</a></li>
+                <br>
+                <li><a href="aula1-N_laco_de_Repeticao_Faca_Enquanto.html">Laço de Repetição faça/enquanto "DO / WHILE"</a></li>
+                <br>
+                <li><a href="aula1-O_Laco_Para.html">Laço de Repetição PARA " FOR "</a></li>
+                <br>
+                <li><a href="aula1-P_Vetores_.html"> Vetor "banco de dados"</a></li>
+                <br>
+                <li><a href="aula1-Q_Vetor_de_Objetos.html"> Vetor de objetos</a></li>
+                <br>
+            </ul>
+        </nav>
+        <div class="contato">
+            contato: <br>
+            <a href="https://github.com/giovanep4mg">github</a> <br>
+            <br>
+            <a href="https://www.facebook.com/giovani.martins3/">facebook</a><br>
+            <br>
+            <a href="https://www.linkedin.com/in/giovani-teodoro-martins-4a27a4252/">Linkedin</a>
+            <br>
+        </div>
+        <div class="copyright">
+            <br>
+            &copy;Giovani Teodoro Martins
+            <br>
+        </div>
+        <div class="imagem">
+            <img src="./imagens/nego1.jpg" alt="foto do criado do site" >
+        </div>
+    </div>
+    <main class="todaPagina">
+        <div class="title"><h1>Vetores</h1></div>
+        <div class="description">
+            <h2>
+                <b>Vetor</b> = são várias informações dentro de uma variável, um banco de dados temporário.<br>
+                <br>
+                Para mostra um item dentro do vetor, usa o "[]", passando o número de qual você quer.<br>
+                A ordem dentro do vetor começa com zero "0", ou seja,"HTML" é "0", "CSS" é "1" ...<br>
+            </h2>
+        </div>
+        <br>
+        <div class="exemplo">
+            <h2>
+                <b>Exemplo de código:</b><br>
+                <br>
+                Abra a tag "script", dentro dela coloque:<br>
+                <br>
+                //variável recebe => essas pequena lista => "HTML", "CSS", "JAVASCRIPT" <br>
+                <b>var cursos = ["HTML", "CSS", "JAVASCRIPT", ];</b><br>
+                <br>
+                <br>
+                // caixa de mensagem, exibirá o curso "0", que é o HTML <br>
+                <b>alert(cursos[0])</b><br>
+                <br>
+                //exibirá o curso "2", que é o JAVASCRIPT <br>
+                <b>alert(cursos[2]);</b><br>
+                <br>
+                Fecha a tag "/script" <br>
+                <br>
+                Veja como é o código:<br>
+                <div class="imagem">
+                    <img src="./imagens/Vetor.png" alt="print do código">
+                </div>
+                <br>
+                <br>
+                Agora veja como seria, clicando no botão abaixo:<br>
+                <br>
+                Exibir o curso " 0 ":<br>
+                <button type="submit" onclick="exibir0()"> Exibir </button>
+                <br>
+                <br>
+                Exibir o curso " 2 ":<br>
+                <button type="submit" onclick="exibir2()"> Exibir </button>
+                <br>
+            </h2>
+            <br>
+        </div>
+        <br>
+    </main>
+</body>
+</html>

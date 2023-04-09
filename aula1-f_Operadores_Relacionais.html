@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Operadores Relacionais</title>
+    <!--CSS-->
+    <link href="style.css" rel="stylesheet">
+    <!--Java Script tem que ser colocado aqui dentro do head-->
+    <script>
+        //Operdores Relacionais = verifição, se é ou não.
+
+        function maior(){
+        // 5 é maior que 4
+        window.alert(5>4);
+        }
+
+        function menor(){
+        // 5 é menor que 4                                                                                    
+        window.alert( 5 < 4 );
+        }
+
+        function igual(){
+        // 5 é igual a 4
+        alert(5==4);
+        }
+
+        function maiorIgual(){
+        // 5 é maior ou igual a 5
+        window.alert (5 >= 5 );
+        }
+
+        function menorIgual(){
+        //8 é menor ou igual a 12.
+        window.alert( 8 <= 12 );
+        }
+
+        function diferente(){
+        //8 não é igual a 9
+        window.alert(8 != 9);
+        }
+    </script>
+</head>
+<body>
+    <div class="menu-container">
+        <nav class="menu">
+            <h2 class="title">Menu</h2>
+            <ul>
+                <li><a href="aula1_EstruturaBase.html">Estrutura Base do JS </a></li>
+                <br>
+                <li><a href="aula1-E_Variaveis.html"> Variáveis </a></li>
+                <br>
+                <li><a href="aula1-f_Operadores_Relacionais.html">Operadores Relacionais </a></li>
+                <br>
+                <li><a href="aula1-g_Condicional_Simples.html"> Condicional Simples </a></li>
+                <br>
+            </ul>
+        </nav>
+        <div class="contato">
+            contato: <br>
+            <a href="https://github.com/giovanep4mg">github</a> <br>
+            <br>
+            <a href="https://www.facebook.com/giovani.martins3/">facebook</a><br>
+            <br>
+            <a href="https://www.linkedin.com/in/giovani-teodoro-martins-4a27a4252/">Linkedin</a>
+            <br>
+        </div>
+        <div class="copyright">
+            <br>
+            &copy;Giovani Teodoro Martins
+            <br>
+        </div>
+        <div class="imagem">
+            <img src="./imagens/nego1.jpg" alt="foto do criado do site" >
+        </div>
+    </div> 
+    <main class="todaPagina">
+        <div class="title"><h1>Operadores Relacionais no JS</h1></div>
+        <div class="description">
+            <h2>
+                Usados para fazer verificações:<br>
+                Se é maior ou menor,se é igual ou diferente.<br>
+                Se é maior ou igual, se é menor ou igual.<br>
+                <br>
+                Vamos fazer essa verificação, e vai dá a resposta:<br>
+                <b>true</b> é verdadeiro. <br>
+                <b>false</b> é falso .<br>
+                <br>
+                Para ajudar a visualização de como fica, adicionei um botão que vai dá a resposta.<br>
+                <br>
+            </h2>
+        </div>
+        <div class="exemplo">
+            <h2>
+                <span style="color: rgb(118, 20, 209);">Exemplo de código:</span><br>
+                Abra a tag "script" e dentro dele coloque:<br>
+                <br>
+                <b>// 5 é maior que 4</b> <br>
+                window.alert(5 > 4);<br>
+                Agora veja como seria, clicando no botão abaixo:<br>
+                <button type="button" onclick="maior()"> Resultado </button>
+                <br>
+                <br>
+                <b>// 5 é menor que 4 </b><br>
+                window.alert(5 * 4); * por que não tem como colocar o sinal de menor aqui<br>
+                Agora veja como seria, clicando no botão abaixo:<br>
+                <button type="button" onclick="menor()"> Resultado </button>
+                <br>
+                <br>
+                <b>// 5 é igual a 4</b>  => sinal de igual >> usa dois simbolos de iguais "=="<br>
+                window.alert(5 == 4);<br>
+                <button type="button" onclick="igual()"> Resultado </button>
+                <br>
+                <br>
+                <b>// 5 é maior ou igual a 5</b> <br>
+                window.alert( 5 >= 5 ); <br>
+                Agora veja como seria, clicando no botão abaixo:<br>
+                <button type="button" onclick="maiorIgual()"> Resultado </button>
+                <br>
+                <br>
+                <b>// 8 é menor ou igual a 12</b> <br>
+                window.alert( 8 *= 12 ); * por que não tem como colocar o sinal de menor aqui<br>
+                Agora veja como seria, clicando no botão abaixo:<br>
+                <button type="button" onclick="menorIgual()"> Resultado </button>
+                <br>
+                <br>
+                <b>// 8 não é igual a 9 </b> => diferente, usa esses simbolos "!=" dizendo que não é igual<br>
+                window.alert(8 != 9);<br>
+                Agora veja como seria, clicando no botão abaixo:<br>
+                <button type="button" onclick="diferente()"> Resultado </button>
+                <br>
+                <br>
+                Fecha a tag "/script" <br>
+                <br>
+                <br>
+                Veja como é o código:<br>
+                <div class="imagem">
+                    <img src="./imagens/operadores-relacionais.png" alt="print do código">
+                </div>
+                <br>
+                <br>
+            </h2>
+            <br>
+        </div>
+        <br>
+    </main>
+</body>
+</html>

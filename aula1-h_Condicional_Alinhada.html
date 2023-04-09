@@ -28,6 +28,30 @@
                 alert("Reprovado");
             }
         }
+        function pegarMedia(){
+
+                var notaUsuário = document.getElementById("notaUsuário").value;
+
+                // para converter de string para número
+                // numero = parseInt(idadeUsuário);
+
+            //condicional aninhada
+            if(notaUsuário == 10){
+                alert("Parabéns!");
+            }else if (notaUsuário >= 9 ){
+                alert("Otimo!");
+            }else if(notaUsuário >= 8){
+                alert("Bom!");
+            }else if(notaUsuário >= 7){
+                alert("Na média");
+            }else if(notaUsuário >= 5){
+                alert("Em exame.");
+            }else{
+                alert("Reprovado");
+            }
+
+
+        }
     </script>
 </head>
 <body>
@@ -103,7 +127,20 @@
                 <br>
                 <br> 
                 <br>
+                
             </h2>
+        </div>
+        <div class="exemplo">
+            <h2>
+                Digite uma nota, para fazer a verificação,<br>
+                <br>
+                <form>
+                    <input type="number" id="notaUsuário">
+                    <button type="button" onclick="pegarMedia()">Verificar</button>
+                </form>
+                <br>
+            </h2>
+            <br>
         </div>
         <br>
     </main>

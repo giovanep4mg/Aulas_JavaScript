@@ -47,6 +47,7 @@
             
             var numbB = document.getElementById("num2").value;
             
+            // para converter de string para número
             numero = parseInt(numA);
             
         }
@@ -80,6 +81,36 @@
             var numbB = document.getElementById("num2").value;
 
             var verificado  = numA == numbB ;
+
+            alert(verificado);
+        }
+        function maiorIgual1() {
+
+            var numA = document.getElementById("num1").value;
+
+            var numbB = document.getElementById("num2").value;
+
+            var verificado  = numA >= numbB ;
+
+            alert(verificado);
+        }
+        function menorIgual1() {
+
+            var numA = document.getElementById("num1").value;
+
+            var numbB = document.getElementById("num2").value;
+
+            var verificado  = numA <= numbB ;
+
+            alert(verificado);
+        }
+        function diferente1() {
+
+            var numA = document.getElementById("num1").value;
+
+            var numbB = document.getElementById("num2").value;
+
+            var verificado  = numA != numbB ;
 
             alert(verificado);
         }
@@ -194,9 +225,13 @@
                             Digite um número A : <input type="number" id="num1" name="num1" onkeyup="numeroMaior()"> <br>
                             Digite um número B : <input type="number" id="num2" name="num2" onkeyup="numeroMaior()"> <br>
                             <br>
+                            <b>true </b>=> verdadeiro / <b>false </b> => falso <br>
                             <button type="button" id="maior" onclick="maiorQ()"> A maior que B </button> <br>
                             <button type="button" id="menor" onclick="menorQ()"> A menor que B </button> <br>
                             <button type="button" id="igual" onclick="igualQ()"> A igual que B </button> <br>
+                            <button type="button" id="maiorIgual" onclick="maiorIgual1()"> A maior ou igual B </button> <br>
+                            <button type="button" id="menorIgual" onclick="menorIgual1()"> A menor ou igual B </button> <br>
+                            <button type="button" id="diferente" onclick="diferente1()"> A diferente B </button> <br>
                             <br>
                         </h2>
                     </form>

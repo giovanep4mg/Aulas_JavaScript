@@ -26,6 +26,25 @@
          }
 
         }
+        function pegarIdade(){
+
+            var idadeUsuário = document.getElementById("idadeUsuário").value;
+            
+            // para converter de string para número
+           // numero = parseInt(idadeUsuário);
+
+            //se (idade for maior ou igual a 18)  
+            if( idadeUsuário >= 18 ){
+                //exibi essa mensagem 
+                alert("Pode tirar")
+            //senão    
+            } else{
+                //exibi essa mensagem
+                alert("Não pode tirar ")
+            }
+
+
+        }
 </script>
 </head>
 <body>
@@ -106,6 +125,19 @@
                 Agora veja como seria, clicando no botão abaixo:<br>
                 <button type="button" onclick="verificar()"> verificar </button>
                 <br>
+                <br>
+                <div>
+                    <h2>
+                        Digite uma idade, para fazer a verificação,<br>
+                        se pode ou não tirar CNH .<br>
+                        <form>
+                            <input type="number" id="idadeUsuário">
+                            <button type="button" onclick="pegarIdade()">Verificar</button>
+                        </form>
+                        <br>
+                    </h2>
+                    <br>
+                </div>
                 <br>
             </h2>
             <br>

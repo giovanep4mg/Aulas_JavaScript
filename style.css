@@ -107,4 +107,7 @@ button:hover{
 .imagem{
     contain: content;
 }
+input{
+    font-size: 17px;
+}
 

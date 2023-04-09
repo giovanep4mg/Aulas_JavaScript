@@ -22,6 +22,19 @@
             }
         }
 
+        function dadosUsuario(){
+
+            var notaUsuario = document.getElementById("notaUsuario").value;
+            var faltasUsuario = document.getElementById("faltasUsuario").value;
+            console.log(notaUsuario);
+            console.log(faltasUsuario);
+            //condicional + operador = os dois tem que dá certo
+            if((notaUsuario >= "7" ) && (faltasUsuario <= "15")){
+                alert(" Sua nota foi : "+notaUsuario+ ", e suas faltas foram : " +faltasUsuario+" , seu resultado é : Aprovado!");
+            }else{
+                alert(" Sua nota foi : "+notaUsuario+ ", e suas faltas foram : " +faltasUsuario+" , seu resultado é : Reprovado!");
+            }
+        }
     </script>
 </head>
 <body>
@@ -114,6 +127,28 @@
                 <br>
             </h2>
             <br>
+        </div>
+        <div class="exemplo">
+            <h2>
+                Crie suas próprias nota e faltas, para fazer as verificações.<br>
+                <br>
+                Nota devem ser: <b>maior ou igual a 7</b> <br>
+                Faltas devem ser : <b>menor ou igual a 15 </b> <br>
+                <br>
+                <b>Para ser aprovado, tem que ter alcançado a média das duas verificações</b> <br>
+                <br>
+                <form>
+                    Digite a nota do aluno : <input type="text" id="notaUsuario"> <br>
+                    <br>
+                    Digite quantas faltas ele possui : <input type="number" id="faltasUsuario"> <br>
+                    <br>
+                    <br>
+                    <button type="button" onclick="dadosUsuario()"> Mostrar resultados </button> <br>
+                    <br>
+                </form>
+                <br>
+                <br>
+            </h2>
         </div>
         <br>
     </main>

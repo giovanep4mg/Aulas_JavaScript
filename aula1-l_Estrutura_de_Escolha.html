@@ -49,7 +49,47 @@
 
         }
 
-    
+        function fazerPedido(){
+            // obter o código do pedido
+            var pedido = document.getElementById("pedidoUsuario").value;
+
+            // para converter de string para número
+            pedido1 = parseInt(pedido);
+
+            //escolha (passa o codigo escolhido)
+            switch(pedido1){
+                //caso seja o código "0"
+                case 0:
+                    //exibe essa mensagem
+                    alert("Feijoada");
+                //parada     
+                break;
+                //caso seja o código seja "1"    
+                case 1:
+                    //exibi essa mensagem
+                    alert("Macarronada");
+                //parada
+                break;
+                //caso seja o código "2"
+                case 2:
+                    //exibi essa mensagem
+                    alert("Suco de laranja");
+                //parada
+                break;
+                //caso seja o código "3"
+                case 3:
+                    //exibi essa mensagem
+                    alert("refrigerante");
+                //parada
+                break;
+                //caso não seja nenhum dos códigos
+                default:
+                    //exibi essa mensagem
+                    alert("Código inválido!");
+
+            }
+
+        }
 
     </script>
 </head>
@@ -153,6 +193,29 @@
                 <br>
                 Agora veja como seria, clicando no botão abaixo:<br>
                 <button type="submit" onclick="estruturaSwitch()"> Verificar </button>
+                <br>
+            </h2>
+            <br>
+        </div>
+        <div class="exemplo">
+            <h2>
+                Exemplo prático, este é um menu, que tem algumas opções,<br>
+                você vai fazer o pedido pelo código do produto.<br>
+                <br>
+                <b>Menu</b>
+                <br>
+                <div class="menu" style="border: 1px solid black; background-color: rgba(137, 43, 226, 0.096); margin: 2px; padding: 10px; width: max-content;">
+                    Feijoada => código 0 <br>
+                    Macarronada => código 1 <br>
+                    Suco de laranja => código 2 <br>
+                    refrigerante => código 3 <br>
+                </div>
+                <br>
+                Agora faça seu pedido usando o código:<br>    
+                <form>
+                    <input type="number" id="pedidoUsuario">
+                    <button type="button" onclick="fazerPedido()">Fazer pedido.</button>
+                </form>
                 <br>
             </h2>
             <br>

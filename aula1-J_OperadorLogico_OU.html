@@ -22,6 +22,28 @@
             }
         }
 
+        function passou(){
+            //obter qual deve ser a nota do trabalho a condição
+            var notaTrabalho = document.getElementById("valorTrabalho").value;
+
+                // para converter de string para número
+                valorTrabalho = parseInt(notaTrabalho);
+            
+            //obter nota do trabalho 1 digitado pelo usuário
+            var notaTrabalho1 = document.getElementById("notaTrabalho1").value;
+            
+            //obter nota do trabalho 2 digitado pelo usuário
+            var notaTrabalho2 = document.getElementById("notaTrabalho2").value;
+            
+             //condicional
+             if( ( notaTrabalho1 >= valorTrabalho ) ||  ( notaTrabalho2 >= valorTrabalho ) ){
+                alert("Valor do trabalho é : "+valorTrabalho+", Você tirou no trabalho 1 : "+notaTrabalho1+" , e no trabalho 2 : "+notaTrabalho2+" ,por isso você foi Aprovado!");
+            }else{
+                alert("Valor do trabalho é : "+valorTrabalho+", Você tirou no trabalho 1 : "+notaTrabalho1+" , e no trabalho 2 : "+notaTrabalho2+" ,por isso você foi Reprovado!");
+            }
+
+        }
+
     </script>
 </head>
 <body>
@@ -104,10 +126,34 @@
                     <br>
                     <br>  
                 </div>
-                <br>
             </h2>
-            <br>
+        </div>    
+        <div class="exemplo">
+            <h2>        
+                Você agora vai criar a condição para vê se o aluno passa ou não.<br>
+                <br>
+                Primeiro adicione a nota dos trabalhos, que serão a condição para ele passar ou não,<br>
+                se a nota do trabalho do aluno, " for igual ou maior " a que você colocar estará aprovado.<br>
+                <br>
+                <b>Se for no trabalho 1 OU no trabalho 2, estará aprovado.</b> <br>
+                <br>
+                <form>
+                    Valor da nota do trabalho : <input type="number" id="valorTrabalho"> <br>
+                    <br>
+                </form>
+                Agora digite a nota que o aluno tirou nos trabalhos:<br>
+                <form>
+                    Nota Trabalho 1 : <input type="number" id="notaTrabalho1"><br>
+                    <br>
+                    Nota Trabalho 2 : <input type="number" id="notaTrabalho2"> <br>
+                    <br>
+                    <button type="button" onclick="passou()">Verificar</button>
+                </form>
+            </h2>
         </div>
+        <br>
+        <br>
+        <br>
         <br>
     </main>
 </body>

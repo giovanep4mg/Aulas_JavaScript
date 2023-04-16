@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Como pega dados</title>
+    <!--JS-->
+    <script>
+          //variáveis vazias para receber os dados 
+          var nome = "";
+          var idade = Number("");
+
+      //funcao 
+      function pegarDados() {
+
+        //pega o valor, dentro do "id = nome ", e salva na var "nome"
+        nome = document.getElementById("nome").value;
+        console.log(nome);
+        //pega o valor, dentro do "id = idade ", e salva na var "idade"
+        idade = document.getElementById("idade").value;
+        console.log(idade);
+        //retorna para o html, o valor dentro da variável "nome" 
+        document.getElementById("valorDigitadoNome").innerHTML = nome;
+
+        //retorna para o html, o valor dentro da variável "idade"
+        document.getElementById("valorDigitadoIdade").innerHTML = idade;
+        
+      }
+
+
+    </script>
+  </head>
+  <body>
+    <div class="menu-container">
+        <nav class="menu">
+            <h2 class="title">Menu</h2>
+            <ul>
+                <br>
+						<li><a href="aula4-a_Seletor.html"> Seletor de HTML</a></li>
+						<br>
+						<li><a href="aula4-b_Seletores_classe.html"> Seletor de CLASSE</a></li>
+						<br>
+						<li><a href="aula4-c_Seletor_Id.html"> Seletor de ID</a></li>
+						<br>
+						<li><a href="aula4-d_Manipular_o_CSS.html"> Manipular o CSS</a></li>
+						<br>
+						<li><a href="aula4-e_Atributos.html"> Atributos</a></li>
+						<br>
+                        <li><a href="index.html"> Inicio</a></li>
+						<br>
+            </ul>
+        </nav>
+        <div class="contato">
+            contato: <br>
+            <a href="https://github.com/giovanep4mg">github</a> <br>
+            <br>
+            <a href="https://www.facebook.com/giovani.martins3/">facebook</a><br>
+            <br>
+            <a href="https://www.linkedin.com/in/giovani-teodoro-martins-4a27a4252/">Linkedin</a>
+            <br>
+        </div>
+        <div class="copyright">
+            <br>
+            &copy;Giovani Teodoro Martins
+            <br>
+        </div>
+        <div class="imagem">
+            <img src="./imagens/nego1.jpg" alt="foto do criado do site" >
+        </div>
+    </div> 
+    <main class="todaPagina">
+      <section class="aula">
+        <header class="title"><h1>Como pegar dados do usuário</h1></header>
+        <section class="description">
+            <h2>
+                <br>
+                Vamos aprender a pegar os dados do usuário via JQuery.<br>
+                <br>
+                Mostrar na página os dados e fazer uma verificação.<br>
+                <br>
+                Dentro da tag "body" coloque essas tags:<br>
+                <div class="bloco">
+                    <br>
+                    // campo de texto para pegar o nome <br>
+                    <b>h2</b>" Digite seu nome: "<b>/h2</b> <br>
+                    <b>input type="text" id="nome"</b> <br>
+                    <br>
+                    //campo de número para pegar a idade<br>
+                    <b>h2</b>" Digite sua idade: "<b>/h2</b> <br>
+                    <b>input type="number" id="idade"</b> <br>
+                    <br>
+                    <br>
+                    // botão para enviar os dados, ativando a funçao pegar dados <br>
+                    <b>input type="submit" onclick="pegarDados()"  value="Enviar dados"</b> <br>
+                    <br>
+                    <br>
+                    Veja como ele  fica na página:<br>
+                    <br>
+                    <h2>Digite seu nome:</h2> 
+                    <input type="text" id="nome"> <br>
+                    <br>
+                    <h2>Digite sua idade:</h2> 
+                    <input type="number" id="idade"> <br>
+                    <br>
+                    <input type="submit" onclick="pegarDados()"  value="Enviar dados">
+                    <br>
+                </div>
+              <br>
+              Veja o código na imagem abaixo:<br>
+              <div class="imagem">
+                <img src="./imagens/dados-usuario-1.png" alt="print do código">
+            </div>   
+              <br> 
+              <br>
+              Agora vamos fazer o evento "onclick", criar a função, dentro da tag "head", crie a tag <b>script</b>.<br>
+              <br>
+              Dentro da tag "script" adicione esses códigos:<br>
+              <div class="documentFunction">
+                <br>
+                Primeira coisa é criar as variáveis que iram guardar os dados digitados: <br>
+                ___// variáveis<br>
+                ___<b> nome = "" ; </b> => inicia vazia.<br>
+                ___<b> idade = "" ; </b> => inicia vazia.<br>
+                <br>
+                <div class="bloco">
+                  ___// Função pegar dados<br>
+                  ___<b>function pegarDados() {</b> <br>
+                  <br>
+                  <br>
+                  ________// pega o valor, no id "nome" e salva na var "nome" <br>
+                  ________<b>nome = document.getElementById("nome").value;</b> <br>
+                  <br>
+                  ________//pega o valor, dentro do "id = idade ", e salva na var "idade" <br>
+                  ________<b>idade = document.getElementById("idade").value;</b> <br>
+                  <br>
+                  <br>
+                  ___<b>}</b> => fecha a função <br>
+                </div>
+                Pegamos os dados que o usuário digitou.<br>
+                <br>
+                Veja o código na imagem abaixo:<br>
+                <div class="imagem">
+                    <img src="./imagens/dados-usuario-2.png" alt="print do código">
+                </div>   
+                <br>
+                <br>
+                Agora para exibir os dados na página, dentro da tag "body", adicione essas tags:<br> 
+                <br>
+                <b>h2</b>Seu nome é:<b>/h2</b> 
+                <b>p id="valorDigitadoNome"> </b> <b>/p</b> <br>
+                <br>
+                <b>h2</b>Sua idade é:<b>/h2</b> 
+                <b>p id="valorDigitadoNome"> </b> <b>/p</b> <br>
+                <br>
+                Veja como fica na página:<br>
+                <br>
+                <h2>Seu nome é : </h2>
+                <p id="valorDigitadoNome"></p>
+                <br>
+                <h2>Sua idade é :</h2>
+                <p id="valorDigitadoIdade" ></p>
+                <br>
+                Veja o código na imagem abaixo:<br>
+                <div class="imagem">
+                    <img src="./imagens/dados-usuario-3.png" alt="print do código">
+                </div>   
+                <br>
+                <br>
+                Dentro da "função" que usamos para pegar os dados, vamos adicionar:<br>
+                <br>
+                // vai pegar o valor da var "nome" e passar para o id "valorDigitadoNome" <br>
+                <b>document.getElementById("valorDigitadoNome").innerHTML = nome;</b> <br>
+                <br>
+                // pega o valor da var "idade" e passa para o id "valorDigitadoIdade" <br>
+                document.getElementById("valorDigitadoIdade").innerHTML = idade; <br>
+                <br>
+                Veja o código na imagem abaixo:<br>
+                <div class="imagem">
+                    <img src="./imagens/dados-usuario-4.png" alt="print do código">
+                </div>   
+                <br>
+                Só adicionar eles lá e já vai mostra na página o valor digitado pelo usuário na página.<br>
+                <br>
+               <br>
+            </h2>
+            <br>
+          <br>
+      </section>
+  </main>
+</body>
+</html>
